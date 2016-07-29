@@ -35,7 +35,7 @@
 					</a>
 				</div><!-- .site-branding -->
 				
-				<div class="col-md-7 col-md-offset-3">
+				<div class="col-md-8 col-md-offset-2">
 					<div id="site-navigation" class="main-navigation">
 						<!-- . <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tema-vemgerir' ); ?></button> -->
 						<?php wp_nav_menu( array( 

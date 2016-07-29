@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 		<div class="site-main-intro col-md-12">
-			<h1>Pagina Inicial</h1>	
+			<h1>passo a passo</h1>	
 		</div>
 		
 		<h1>Juntos catalisando oportunidade</h2>
