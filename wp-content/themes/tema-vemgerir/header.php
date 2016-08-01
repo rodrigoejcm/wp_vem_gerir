@@ -42,8 +42,63 @@
 			</div>
 
 			<div class="site-login">
-				<a href="#">Área do Cliente</a>
-			</div>
+
+			<nav>
+			  <ul>
+			    <li id="login">
+			      <a id="login-trigger" href="#">
+			        Área do Cliente
+			      </a>
+			      <div id="login-content">
+			      
+
+
+
+			        <form name="frm_login" id="frm_login" method="post" action="http://sistema.vemgerir.com.br/login.act.php?">
+			          
+						<div class="input-group input-group-sm">
+								<span class="input-group-addon glyphicon glyphicon-user" id="vg-user">
+								</span>
+								<input id="login_input" name="login" type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-user">
+						</div>
+
+						<div class="input-group input-group-sm">
+								<span class="input-group-addon glyphicon glyphicon-asterisk" id="vg-password">
+								</span>
+								<input id="senha_input" type="password" name="senha" value="" type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-password">
+						</div>
+
+	         
+			            <input class="submit-input" type="submit" id="submit" value="Log in">
+			            
+			         
+			        </form>
+			      </div>                     
+			    </li>
+			  </ul>
+			</nav>
+				<!-- <a href="#" class="dropdown-toggle" href="#" data-toggle="dropdown">Área do Cliente</a>
+				<div class="dropdown-menu">
+				
+					<form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon glyphicon glyphicon-user" id="vg-user">
+							</span>
+							<input type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-user">
+					</div>
+
+					<div class="input-group input-group-sm">
+							<span class="input-group-addon glyphicon glyphicon-asterisk" id="vg-password">
+							</span>
+							<input type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-password">
+					</div>
+
+
+
+					</form>
+				</div> -->
+              <!-- Login form here -->
+            </div>
 		
 			<div id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tema-vemgerir' ); ?></button>

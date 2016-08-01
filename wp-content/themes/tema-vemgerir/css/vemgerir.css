@@ -54,9 +54,9 @@ CSS template VemGerir.com.br
 	border: 2px solid #3BD231;
 	color: #3BD231;
 	word-spacing: -2px;
-	-webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-	border-radius: 2px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .site-fb a, .site-login a {
@@ -100,6 +100,89 @@ CSS template VemGerir.com.br
 
 .site-login, .site-fb{
 	margin-left:15px;	
+}
+
+/*# Menu - highlight do item corrente */
+
+.main-navigation li .current-menu-item a, .current_page_item a{
+	color:#3BD231 !important; 
+}
+
+/*# Menu - Menu dropdown login */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  border-radius: 3px;    
+}
+
+nav li {
+  float: left;          
+}
+
+nav #login-trigger {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  text-decoration: none;
+
+}
+
+nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active {
+background: #3BD231;
+color: white;
+}
+
+nav #login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: -2px;
+  z-index: 999;    
+  background: #3BD231;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+  right: -2px;
+  width: 200px;  
+}
+
+.input-group{
+	margin: 10px 0px;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+/*# Menu - Menu dropdown login - Botão submit */
+
+form .submit-input {
+	width: 100%;
+	background-color: white;
+	color: #3BD231;
+	font-family: "co-headline";
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+form .submit-input:hover {
+	font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -236,10 +319,7 @@ h1 {
 /*--------------------------------------------------------------
 # Conteudo-pagina-inicial
 --------------------------------------------------------------*/
- table, table td {
-
- }
-
+ 
 .site-main-planos{
 	margin-top: 20px;
 }
@@ -317,9 +397,9 @@ h1 {
 }
 
 
-/* Cores Tabela*/
+/* --Cores Tabela*/
 
-/* verde escuro*/
+/* ------verde escuro*/
 
 .verde-a table, .verde-a table td {
 	border: 1px solid #1D9649;
@@ -342,7 +422,7 @@ h1 {
 	color: #1D9649;	
 }
 
-/* verde limao*/
+/* ------verde limao*/
 
 .verde-b table, .verde-b table td {
 	border: 1px solid #3BD231;
@@ -364,7 +444,7 @@ h1 {
 	color: #3BD231;	
 }
 
-/* verde claro*/
+/* ------verde claro*/
 
 
 .verde-c table, .verde-c table td {
@@ -387,11 +467,17 @@ h1 {
 	color: #ABE11E;	
 }
 
-/* cinza*/
+/* ------cinza*/
 
 .cinza i {
 	color: #464A4A;
 }
+
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-sistema
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Footer

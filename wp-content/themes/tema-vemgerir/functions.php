@@ -112,6 +112,8 @@ function tema_vemgerir_scripts() {
 	
 	wp_enqueue_script( 'tema-vemgerir-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'tema-vemgerir-js-vemgerir', get_template_directory_uri() . '/js/vemgerir.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'tema-vemgerir-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'tema-vemgerir-font-typekit', 'https://use.typekit.net/vpp2bev.js'); 	
