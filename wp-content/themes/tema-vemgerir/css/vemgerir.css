@@ -219,6 +219,13 @@ h1 {
 	font-weight: normal;
 }
 
+h2 {
+	font-family: "co-headline";
+	font-size: 30px;
+	color: #464A4A;
+	font-weight: normal;
+}
+
 .hmargem {
 	margin-top: 30px !important;
 }
@@ -361,6 +368,10 @@ h1 {
 	
 }
 
+.tabela-planos tr{
+	height: 50px;
+}
+
 .botao-tabela{
 	width: 50%;
 	font-family: "co-headline";
@@ -424,12 +435,37 @@ h1 {
 	float: right;
 }
 
+.extra-planos-header{
+	text-align: center;
+	background-color: white;
+	z-index: 2;
+    position: relative;
+    top: -10%;
+    left: 39%;
+    width: 220px;
+}
+
+.extra-planos{
+	border: 2px solid #f0f0f0;
+	height: 350px;
+	margin-top: 40px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.texto-disclaimer p{
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: left;
+	font-size: 14px;
+    line-height: 1.1;
+} 
 
 /* --Cores Tabela*/
 
 /* ------verde escuro*/
 
-.verde-a table, .verde-a table td {
+.verde-a table {
 	border: 1px solid #1D9649;
 }
 
@@ -452,7 +488,7 @@ h1 {
 
 /* ------verde limao*/
 
-.verde-b table, .verde-b table td {
+.verde-b table {
 	border: 1px solid #3BD231;
 }
 
@@ -475,7 +511,7 @@ h1 {
 /* ------verde claro*/
 
 
-.verde-c table, .verde-c table td {
+.verde-c table {
 	border: 1px solid #ABE11E;
 }
 
