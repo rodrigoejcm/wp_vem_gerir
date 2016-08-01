@@ -535,10 +535,10 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
+	/*clear: both;*/
 	display: block;
 	float: left;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .main-navigation ul {

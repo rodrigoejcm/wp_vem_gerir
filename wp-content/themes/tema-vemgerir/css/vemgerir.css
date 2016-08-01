@@ -15,61 +15,91 @@ CSS template VemGerir.com.br
 # Menu
 --------------------------------------------------------------*/
  
-.main-navigation a,.main-navigation a:visited {
+/*# Menu - Ajustes de Floats*/ 
 
+.site-logo{
+	float:left;
+}
+
+.main-navigation, .site-login, .site-fb{
+	float:right;
+}
+
+/*# Menu - Tipografia e efeito hover (border-bottom) Menu WP*/
+
+.main-navigation a, .main-navigation a:visited {
 	font-family: "co-headline";
 	font-size: 16px;
 	color: #464A4A;
+	word-spacing: -2px;
 }
 
-.main-navigation a:hover {
-
+.main-navigation a:hover, .main-navigation a:focus{
+	border-bottom: 2px solid #3BD231; 
 	color: #3BD231;
 	text-decoration:none; 
 }
 
-.menu-item a {
-	margin: 5px;
+.main-navigation a{
+	border-bottom: 2px solid #f0f0f0; 
+	height: 58px; /*Menos 2px do reajuste de borda dos botôes*/
+	display: block;
 }
 
-.main-navigation .nav-area-cliente-link {
-	
+/*# Menu - Tipografia e efeito hover botôes */
+
+.site-login, .site-fb{
+	font-family: "co-headline";
+	font-size: 16px;
 	border: 2px solid #3BD231;
-	
+	color: #3BD231;
+	word-spacing: -2px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
-.nav-area-cliente-link a,.nav-area-cliente-link a:visited{
-	margin: 5px;
+.site-fb a, .site-login a {
+	display: block; /*para o link ocupar toda a div e o hover no link mudar o fundo da div */
+	
+}	
+
+.site-fb {
+	font-size: 18px;
+
+}
+
+.site-login a:visited,.site-fb a:visited{
+/*	margin: 5px;*/
 	color: #3BD231;
 }
 
-.main-navigation .nav-facebook-link {
-	
-	border: 2px solid #3BD231;
-	
+.site-login a:hover, .site-fb a:hover, .site-login a:focus, .site-fb a:focus {
+	text-decoration: none;
+	background-color: #3BD231;
+	color: white; 
 }
 
-.nav-facebook-link a {
-	display:none;
+/*# Menu - Ajustes de posicionamento entre menu WP e botões */
+
+.main-navigation{
+	padding-top: 2px; /*reajuste de borda para alinhar com os botôes*/
 }
 
-.main-navigation .fa{
-	color: #3BD231;
-
+.site-login a {
+	padding: 0px 10px;
 }
 
-.nav-facebook-link{
-	padding: 7px 12PX;
+.site-fb a {
+	padding: 3px 8px;
 }
-
-.nav-facebook-link a,.nav-facebook-link a:visited{
-	margin: 5px;
-	color: #3BD231;
-}
-
 
 .main-navigation li{
-	margin-right: 10px;
+	margin-left:15px;
+}
+
+.site-login, .site-fb{
+	margin-left:15px;	
 }
 
 /*--------------------------------------------------------------
@@ -92,9 +122,10 @@ h1 {
 }
 
 .site-header div.container{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	padding-top:  30PX;
+	/* position: relative;
+	top: 35%;*/
+	/*transform: translateY(-50%);*/
 
 }
   
@@ -131,6 +162,14 @@ h1 {
 	font-size: 14px;
 	color: #464A4A;
 }
+
+.hr-table{
+	height: 2px;
+	background-color: white;
+	margin: 10px 35px;	
+}
+
+
 
 /*--------------------------------------------------------------
 # Conteudo-pagina-inicial
@@ -193,18 +232,185 @@ h1 {
 	/*alterar pelo placeholder*/	
 }
 
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-inicial
+--------------------------------------------------------------*/
+ table, table td {
+
+ }
+
+.site-main-planos{
+	margin-top: 20px;
+}
+
+.tabela-planos{
+	width: 28%;
+	min-width: 265px;
+	float:left;
+	margin-left: 4%;
+	margin-bottom: 20px;
+	
+}
+
+.botao-tabela{
+	width: 50%;
+	font-family: "co-headline";
+	font-size: 16px;
+	background-color: white;
+	display: block;
+	margin-top: -25px;
+    margin-left: 25%;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.botao-tabela:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.botao-tabela:visited {
+	text-decoration: none;	
+}
+
+.nome-plano, .valor-plano, .peridiocidade-plano {
+ 	text-align: center;
+ 	font-family: "co-headline";
+ 	color: white;
+ }
+
+.nome-plano{
+	font-size: 20px;
+	font-weight: lighter;
+	
+}
+
+.valor-plano{
+	font-size: 28px;
+	font-weight: lighter;
+}
+
+.peridiocidade-plano{
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.icone-propriedade{
+	float:left;
+	width:20%;
+	height: 3em;
+	padding-left: 9px;
+}
+
+.icone-propriedade i {
+	margin-top: 7px;	
+}
+
+.descricao-propriedade{
+	margin-top: 10px;
+	width:80%;
+	height: 3em;
+	float: right;
+}
+
+
+/* Cores Tabela*/
+
+/* verde escuro*/
+
+.verde-a table, .verde-a table td {
+	border: 1px solid #1D9649;
+}
+
+.verde-a i {
+	color: #1D9649;
+}
+
+.verde-a table thead {
+	background-color: #1D9649; 
+}
+
+.verde-a .botao-tabela{
+	color: #1D9649;	
+	border: 2px solid #1D9649;	
+}
+
+.verde-a.botao-tabela:visited{
+	color: #1D9649;	
+}
+
+/* verde limao*/
+
+.verde-b table, .verde-b table td {
+	border: 1px solid #3BD231;
+}
+
+.verde-b i {
+	color: #3BD231;
+}
+.verde-b table thead {
+	background-color: #3BD231; 
+}
+
+.verde-b .botao-tabela{
+	color: #3BD231;	
+	border: 2px solid #3BD231;	
+}
+
+.verde-b.botao-tabela:visited{
+	color: #3BD231;	
+}
+
+/* verde claro*/
+
+
+.verde-c table, .verde-c table td {
+	border: 1px solid #ABE11E;
+}
+
+.verde-c i {
+	color: #ABE11E;
+}
+.verde-c table thead {
+	background-color: #ABE11E; 
+}
+
+.verde-c .botao-tabela{
+	color: #ABE11E;	
+	border: 2px solid #ABE11E;	
+}
+
+.verde-c.botao-tabela:visited{
+	color: #ABE11E;	
+}
+
+/* cinza*/
+
+.cinza i {
+	color: #464A4A;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
-.site-footer{
-	/*Trava o footer no fim da página*/
-	clear: right;
-	
-	bottom: 0;
-	width:100%;
+html{
+  position:relative; 
+  min-height: 100%;
+}
 
-	min-height: 90px;
+#content{
+ 	margin-bottom:90px;
+} 
+.site-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:90px;
 	background-color: #3BD231;
 }
 

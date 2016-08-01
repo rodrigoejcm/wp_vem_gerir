@@ -17,26 +17,162 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			</br>
+			<div class="site-main-planos">
 
-
-			<div>RODRIGO</div>
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-
-				// [RODRIGO] Carrega os comentarios
-				
-				/*if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;*/
-
-			endwhile; // End of the loop.
-			?>
+				<div class="tabela-planos verde-a">
+					<table class="table-striped ">
+						<thead>
+							<tr>
+								<th>
+									<div class="nome-plano">PLANO 1</div>
+									<hr class="hr-table">
+									<div class="valor-plano">R$ 100,00</div>
+									<div class="peridiocidade-plano">( por mŝs )</div>
+								</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 1</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 2</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="cinza icone-propriedade">
+										<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 3</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="cinza icone-propriedade">
+										<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 4</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<a class="botao-tabela" href="#">
+						Assinar 
+					</a>	
+				</div>
+				<div class="tabela-planos verde-b">	
+					<table class="table-striped">
+						<thead>
+							<tr>
+								<th>
+									<div class="nome-plano">PLANO 2</div>
+									<hr class="hr-table">
+									<div class="valor-plano">R$ 100,00</div>
+									<div class="peridiocidade-plano">( por mŝs )</div>
+								</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 1</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 2</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 3</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="cinza icone-propriedade">
+										<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 4</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<a class="botao-tabela" href="#">
+						Assinar 
+					</a>
+				</div>
+				<div class="tabela-planos verde-c">
+					<table class="table-striped">
+						<thead>
+							<tr>
+								<th>
+									<div class="nome-plano">PLANO 3</div>
+									<hr class="hr-table">
+									<div class="valor-plano">R$ 100,00</div>
+									<div class="peridiocidade-plano">( por mŝs )</div>
+								</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 1</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 2</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 3</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="icone-propriedade">
+										<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+									</div>
+									<div class="descricao-propriedade">Propreidade 1</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<a class="botao-tabela" href="#">
+						Assinar 
+					</a>
+				</div>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

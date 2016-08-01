@@ -27,24 +27,35 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tema-vemgerir' ); ?></a>
 
 	<div id="masthead" class="site-header">
+	
 		<div class="container">
-			<div class="row" >
-				<div class="site-branding col-md-2">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="logo-header-image" src="<?php echo get_template_directory_uri() . '/img/LogoHeader.svg'; ?>" alt="VemGerir-logo-header">				
-					</a>
-				</div><!-- .site-branding -->
-				
-				<div class="col-md-8 col-md-offset-2">
-					<div id="site-navigation" class="main-navigation">
-						<!-- . <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tema-vemgerir' ); ?></button> -->
-						<?php wp_nav_menu( array( 
-													'theme_location' => 'primary', 
-			 										'menu_id' => 'primary-menu',
-			 										'menu_class' => '' ) ); ?>
-					</div><!-- #site-navigation -->
-				</div>
-			</div><!-- row -->
+		
+			<div class="site-logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img class="logo-header-image" src="<?php echo get_template_directory_uri() . '/img/LogoHeader.svg'; ?>" alt="VemGerir-logo-header"></img>				
+				</a>
+			</div><!-- .site-branding -->
+		
+			<div class="site-fb">
+				<a href="#" class="fa fa-facebook" aria-hidden="true">
+				</a>
+			</div>
+
+			<div class="site-login">
+				<a href="#">Área do Cliente</a>
+			</div>
+		
+			<div id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tema-vemgerir' ); ?></button>
+				<?php wp_nav_menu( array( 
+											'theme_location' => 'primary', 
+	 										'menu_id' => 'primary-menu',
+	 										'menu_class' => '' ) ); ?>
+			</div><!-- #site-navigation -->
+		
+			
+	
+	
 		</div><!-- container -->
 	</div><!-- #masthead -->
 
