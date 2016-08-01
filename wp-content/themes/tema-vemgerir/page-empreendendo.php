@@ -17,6 +17,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		INCLUINDO WP CODE PARA FUTURO AJUSTE DO BLOG
+		
 			<?php
 				if ( have_posts() ) :
 
