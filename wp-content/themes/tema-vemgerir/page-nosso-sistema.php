@@ -16,28 +16,62 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<h1 class="hmargem">Como Funciona</h1>
+			<div class="row sistema">
 
-			</br>
-
-
-			<div>RODRIGO</div>
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-
-				// [RODRIGO] Carrega os comentarios
+				<div class="col-md-4 sitema-caracteristicas">
+					<div class="sitema-caracteristicas-titulo">
+						<span>Rotina Gerencial</span>
+					</div>
+					<div class="sitema-caracteristicas-icone">
+						<img src="holder.js/200x200" class="img-circle">
+					</div>
+					<div class="sitema-caracteristicas-descricao">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</span>
+						<hr class="sitema-caracteristicas-descricao-borda"></span>
+					</div>
+				</div>
+			
+				<div class="col-md-4 sitema-caracteristicas">
+					<div class="sitema-caracteristicas-titulo">
+						<span>Lista de Tarefas</span>
+					</div>
+					<div class="sitema-caracteristicas-icone">
+						<img src="holder.js/200x200" class="img-circle">
+					</div>
+					<div class="sitema-caracteristicas-descricao">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</span>
+						<hr class="sitema-caracteristicas-descricao-borda"></span>
+					</div>
+				</div>
+			
+				<div class="col-md-4 sitema-caracteristicas">
+					<div class="sitema-caracteristicas-titulo">
+						<span>Fluxo de Caixa</span>
+					</div>
+					<div class="sitema-caracteristicas-icone">
+						<img src="holder.js/200x200" class="img-circle">
+					</div>
+					<div class="sitema-caracteristicas-descricao">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</span>
+						<hr class="sitema-caracteristicas-descricao-borda"></span>
+					</div>
+				</div>
 				
-				/*if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;*/
+				<div class="sistema-como-funciona col-md-12 ">
+					<div>
+						<img class="como-funciona-gif" src="http://www.vemgerir.com.br/estilo/imagens/03.gif"></img>
+					</div>
+				</div>
 
-			endwhile; // End of the loop.
-			?>
-
+			</div>
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

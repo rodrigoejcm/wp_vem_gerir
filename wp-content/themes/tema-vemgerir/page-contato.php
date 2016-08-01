@@ -16,27 +16,60 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<h1 class="hmargem">Entre em contato com a gente!</h1>
+		<p>Dê sua opnião, saiba mais sobre os nossos serviços, agende uma visita com nossos consultores...</p>
+		<div class="contato row">
+			<div class="col-md-6">		
+				<form id="form_contato" name="form_contato" method="post" action="http://www.vemgerir.com.br/nit_framework/act.php" target="iframe_valida_contato">
+					<input type="hidden" name="acao" id="acao" value="enviar" align="left">
+					<input type="hidden" name="classe" id="classe" value="contato" align="left">
+					
+					<div class="input-group input-group-lg">
+						<select class="form-control">
+						  <option selected>Assunto</option>
+						  <option>Dúvidas</option>
+						  <option>Sugestões</option>
+						  <option>Quero ser um Consultou</option>
+						  <option>Agendar uma visita</option>
+						  <option>Outros</option>
+						</select>
+					</div>
 
-			</br>
+					<div class="input-group input-group-lg">
+						<input class="form-control" type="text" name="nome" id="nome_input" align="left" placeholder="Nome">
+					</div>
+					
+					<div class="input-group input-group-lg">
+						<input class="form-control" type="text" name="email" id="email_input" align="left" placeholder="E-mail">
+					</div>
 
+					<div class="form-group input-group">
+						<textarea rows="4" class="form-control" id="mensagem_input" name="mensagem" 
+						placeholder="Mensagem"></textarea>
+					</div>
+					<!-- 			
+					<script type="text/javascript">	
+						$(function(){
+							$("input#telefone_input").setMask();	 
+						});
+					</script> -->
+					
+					<!-- <input type="text" name="telefone" id="telefone_input" align="left"  alt="phone" placeholder="Telefone">	 -->				
+					
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="">
+					    Desejo receber notícias sobre a VemGerir através do e-mail
+					  </label>
+					</div>
 
-			<div>RODRIGO</div>
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-
-				// [RODRIGO] Carrega os comentarios
-				
-				/*if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;*/
-
-			endwhile; // End of the loop.
-			?>
+					<input class="botao-form-contato" type="submit" name="logar" value="Enviar">
+				</form>
+			</div>
+			<div class="col-md-6">
+				<img src="holder.js/100px366?textmode=literal?auto=yes"/>
+			</div>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

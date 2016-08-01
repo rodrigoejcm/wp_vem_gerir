@@ -65,7 +65,7 @@
 						<div class="input-group input-group-sm">
 								<span class="input-group-addon glyphicon glyphicon-asterisk" id="vg-password">
 								</span>
-								<input id="senha_input" type="password" name="senha" value="" type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-password">
+								<input id="senha_input" type="password" name="senha" value="" type="text" class="form-control" placeholder="Senha" aria-describedby="vg-password">
 						</div>
 
 	         

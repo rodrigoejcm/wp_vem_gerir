@@ -143,6 +143,17 @@ function tema_vemgerir_scripts() {
         wp_enqueue_script('tema-vemgerir-fontawesome-js');
     }
 
+	/*NAO DEVE SER IMPORTADO EM PRDUCAO*/
+    if (!is_admin() && $GLOBALS['pagenow'] != 'wp-login.php') {
+        wp_deregister_script('tema-vemgerir-holder-js');
+        wp_register_script('tema-vemgerir-holder-js', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.3/holder.min.js', false);
+        wp_enqueue_script('tema-vemgerir-holder-js');
+    }
+
+
+
+
+
 	//wp_enqueue_scripts(' tema-vemgerir-jquery-js', 'https://code.jquery.com/jquery-3.1.0.min.js');
 
 	//wp_enqueue_scripts(' tema-vemgerir-bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');

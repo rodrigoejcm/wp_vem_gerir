@@ -1,14 +1,37 @@
 /*--------------------------------------------------------------
 CSS template VemGerir.com.br
 
+# Container
 # Menu
 # Headlines
 # Header
 # Header HR
 # Conteudo-pagina-inicial
+# Conteudo-pagina-planos
+# Conteudo-pagina-sistema
 # Footer
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+
+@media (min-width: 1200px){
+	.container {
+    width: 1000px !important;
+	}	
+}
+/*
+@media (min-width: 992px){
+	.container {
+	    width: 800px !important;
+	}
+}
+@media (min-width: 768px){
+	.container {
+    width: 700px !important;
+	}	
+}*/
 
 
 /*--------------------------------------------------------------
@@ -193,6 +216,11 @@ h1 {
 	font-family: "co-headline";
 	font-size: 40px;
 	color: #464A4A;
+	font-weight: normal;
+}
+
+.hmargem {
+	margin-top: 30px !important;
 }
 
 /*--------------------------------------------------------------
@@ -317,7 +345,7 @@ h1 {
 
 
 /*--------------------------------------------------------------
-# Conteudo-pagina-inicial
+# Conteudo-pagina-planos
 --------------------------------------------------------------*/
  
 .site-main-planos{
@@ -478,6 +506,106 @@ h1 {
 # Conteudo-pagina-sistema
 --------------------------------------------------------------*/
 
+.sistema{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	clear: both;
+}
+
+.sitema-caracteristicas{
+	text-align: center;
+ 	font-family: "co-headline";
+ 	font-size: 16px;
+	color: #464A4A;
+	padding: 0 50px;
+	height: 100%;
+}
+
+.sitema-caracteristicas-titulo span{
+	border-bottom: 2px solid #f0f0f0;
+	padding-bottom: 6px;
+}
+
+.sitema-caracteristicas-icone{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.sitema-caracteristicas-descricao{
+	font-family: "interface";
+ 	font-size: 20px;
+	color: #464A4A;
+	text-align: left;
+}
+
+.sitema-caracteristicas-descricao-borda{
+	width: 50%;
+	height: 3px;
+	background-color: #3BD231;
+	text-align: left;
+	margin-left: 0;
+}
+
+.sistema-como-funciona{
+	background-color: #94e673;
+	height: 400px; 
+	margin-top: 30px;
+}
+
+.sistema-como-funciona .como-funciona-gif{
+	position: relative;
+	float:right;
+	top: 130px;
+}
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-contato
+--------------------------------------------------------------*/
+.contato{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.contato .form-control:focus {
+    border-color: #3BD231;
+}
+
+.contato .form-control,.input-group {
+	width: 100% !important;
+}
+
+.contato .form-control{
+	color: #3BD231 !important;
+}
+
+select option{
+	color: #99999F;
+}
+
+select option:active{
+	color: #99999F;
+}
+
+textarea {
+	height: inherit;
+	font-size: 18px !important;
+}
+
+form .botao-form-contato{
+	background-color: #3BD231;
+	font-family: "co-headline";
+ 	font-size: 14px;
+ 	color: white;
+ 	float: right;
+ 	width: 40%;
+ 	height: 40px;
+
+}
+
+.checkbox{
+	font-size: 14px;
+	color: #999;
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -491,6 +619,7 @@ html{
 #content{
  	margin-bottom:90px;
 } 
+
 .site-footer{
     position: absolute;
     bottom: 0;
