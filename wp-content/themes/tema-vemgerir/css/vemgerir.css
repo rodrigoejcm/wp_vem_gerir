@@ -84,7 +84,7 @@ CSS template VemGerir.com.br
 
 .site-fb a, .site-login a {
 	display: block; /*para o link ocupar toda a div e o hover no link mudar o fundo da div */
-	
+	color: 	#3BD231;
 }	
 
 .site-fb {
