@@ -21,10 +21,10 @@ get_header(); ?>
 			<h1>passo a passo</h1>	
 		</div>
 		
-		<h1>Juntos catalisando oportunidade</h2>
+		<h1>É Simples.</h2>
 		
-		<p>Criar negócios. Inovar. Transformar ideias em oportunidade. Realizar.</p>
 		
+			
 		<div class="hr-div">
 			<span>Clientes</span>
 			<hr>
@@ -33,7 +33,7 @@ get_header(); ?>
 		<div class="site-main-clientes row">
 			<div class="site-main-clientes-descricao col-md-6">
 				<div class="placeholder-descricao">
-					lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Você tem o seu próprio negócio, trabalha 24 horas por dias e mesmo assim não consegue ver a cor do dinheiro? Uma rotina de trabalho pesada, contas a pagar, dinheiro pra receber, funcionários e fornecedores pra controlar, atendimento ao cliente... Difícil gerenciar tudo isso sozinho, não é? Foi pensando em você que criamos nossas soluções para simplificar a sua vida. Vem gerir com a gente!
 				</div>
 			</div>
 			<div class="site-main-clientes-depoimentos col-md-6">

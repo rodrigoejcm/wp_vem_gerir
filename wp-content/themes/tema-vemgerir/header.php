@@ -36,6 +36,19 @@
 				</a>
 			</div><!-- .site-branding -->
 		
+			<a href="#menu" id="toggle"><span></span></a>
+
+			<div id="menu">
+						    
+			    <?php wp_nav_menu( array( 
+											'theme_location' => 'secondary', 
+	 										'menu_id' => 'secondary-menu',
+	 										'menu_class' => '' ) ); 
+	 			?>
+
+			
+			</div>
+
 			<div class="site-fb">
 				<a href="#" class="fa fa-facebook" aria-hidden="true">
 				</a>
@@ -43,69 +56,49 @@
 
 			<div class="site-login">
 
-			<nav>
-			  <ul>
-			    <li id="login">
-			      <a id="login-trigger" href="#">
-			        Área do Cliente
-			      </a>
-			      <div id="login-content">
-			      
+				<nav>
+				  	<ul>
+				    	<li id="login">
+				      		
+				      		<a id="login-trigger" href="#">
+				      			<span class="area-cliente-text">Área do Cliente</span>
+				      			<i class="area-cliente-icon fa fa-user" aria-hidden="true"></i>
+				      		</a>
+				      		
+							
+				      			<div id="login-content">
+						        	<form name="frm_login" id="frm_login" method="post" action="http://sistema.vemgerir.com.br/login.act.php?">
+						          
+										<div class="input-group input-group-sm">
+												<span class="input-group-addon glyphicon glyphicon-user" id="vg-user">
+												</span>
+												<input id="login_input" name="login" type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-user">
+										</div>
 
+										<div class="input-group input-group-sm">
+												<span class="input-group-addon glyphicon glyphicon-asterisk" id="vg-password">
+												</span>
+												<input id="senha_input" type="password" name="senha" value="" type="text" class="form-control" placeholder="Senha" aria-describedby="vg-password">
+										</div>
 
-
-			        <form name="frm_login" id="frm_login" method="post" action="http://sistema.vemgerir.com.br/login.act.php?">
-			          
-						<div class="input-group input-group-sm">
-								<span class="input-group-addon glyphicon glyphicon-user" id="vg-user">
-								</span>
-								<input id="login_input" name="login" type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-user">
-						</div>
-
-						<div class="input-group input-group-sm">
-								<span class="input-group-addon glyphicon glyphicon-asterisk" id="vg-password">
-								</span>
-								<input id="senha_input" type="password" name="senha" value="" type="text" class="form-control" placeholder="Senha" aria-describedby="vg-password">
-						</div>
-
-	         
-			            <input class="submit-input" type="submit" id="submit" value="Log in">
-			            
-			         
-			        </form>
-			      </div>                     
-			    </li>
-			  </ul>
-			</nav>
-				<!-- <a href="#" class="dropdown-toggle" href="#" data-toggle="dropdown">Área do Cliente</a>
-				<div class="dropdown-menu">
+				         
+							            <input class="submit-input" type="submit" id="submit" value="Log in">
+							        </form>
+				      			</div>                     
+				    	</li>
+				  </ul>
+				</nav>
 				
-					<form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
-						<div class="input-group input-group-sm">
-							<span class="input-group-addon glyphicon glyphicon-user" id="vg-user">
-							</span>
-							<input type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-user">
-					</div>
-
-					<div class="input-group input-group-sm">
-							<span class="input-group-addon glyphicon glyphicon-asterisk" id="vg-password">
-							</span>
-							<input type="text" class="form-control" placeholder="Usuário" aria-describedby="vg-password">
-					</div>
-
-
-
-					</form>
-				</div> -->
-              <!-- Login form here -->
             </div>
 		
 			<div id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tema-vemgerir' ); ?></button>
+				
 				<?php wp_nav_menu( array( 
 											'theme_location' => 'primary', 
 	 										'menu_id' => 'primary-menu',
 	 										'menu_class' => '' ) ); ?>
+
+
 			</div><!-- #site-navigation -->
 		
 			
