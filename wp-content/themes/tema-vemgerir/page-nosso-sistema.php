@@ -14,63 +14,99 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="nhuit-area">
 		<main id="main" class="site-main" role="main">
 			<h1 class="hmargem">Como Funciona</h1>
-			<div class="row sistema">
 
-				<div class="col-md-4 sitema-caracteristicas">
-					<div class="sitema-caracteristicas-titulo">
-						<span>Rotina Gerencial</span>
-					</div>
-					<div class="sitema-caracteristicas-icone">
-						<img src="holder.js/200x200" class="img-circle">
-					</div>
-					<div class="sitema-caracteristicas-descricao">
-						<span>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</span>
-						<hr class="sitema-caracteristicas-descricao-borda"></span>
-					</div>
-				</div>
-			
-				<div class="col-md-4 sitema-caracteristicas">
-					<div class="sitema-caracteristicas-titulo">
-						<span>Lista de Tarefas</span>
-					</div>
-					<div class="sitema-caracteristicas-icone">
-						<img src="holder.js/200x200" class="img-circle">
-					</div>
-					<div class="sitema-caracteristicas-descricao">
-						<span>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</span>
-						<hr class="sitema-caracteristicas-descricao-borda"></span>
-					</div>
-				</div>
-			
-				<div class="col-md-4 sitema-caracteristicas">
-					<div class="sitema-caracteristicas-titulo">
-						<span>Fluxo de Caixa</span>
-					</div>
-					<div class="sitema-caracteristicas-icone">
-						<img src="holder.js/200x200" class="img-circle">
-					</div>
-					<div class="sitema-caracteristicas-descricao">
-						<span>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</span>
-						<hr class="sitema-caracteristicas-descricao-borda"></span>
-					</div>
-				</div>
-				
-				<div class="sistema-como-funciona col-md-12 ">
-					<div>
+			<div class="row ">
+				<div class="col-md-12">
+					<div class="sistema-como-funciona">
+						<div class="esq">
+							<p class="texto">
+								wnxdnhiuxinhuxin;ehui
+								xdhunnuhiedwniuhnihexwdihnudw
+								nihuedwinuhnx;ewdnihunhuixdew
+								dxewhuihihuxedwhuiden;
+							</p>
+						</div>
+					
 						<img class="como-funciona-gif" src="http://www.vemgerir.com.br/estilo/imagens/03.gif"></img>
+					
 					</div>
+				</div>
+			</div>
+
+			<br><br><br>
+
+			<div style="clear:both"></div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="hr-div">
+						<span>Nosso sistema</span>
+						<hr>
+					</div>		
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<p class="texto">
+						A Vem Gerir é muito mais do
+						que uma ferramenta para
+						controlar o seu dinheiro.
+					</p>
+					<p class="texto">
+						É uma plataforma que te
+						ajuda a criar uma rotina
+						gerencial, a controlar suas
+						finanças e suas principais
+						tarefas
+					</p>	
+				</div>
+				<div class="col-md-8">
+					<div class="placeholder-sistema-imagem">
+					</div>	
+				</div>
+
+
+			</div>
+
+			<br><br><br>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="hr-div">
+						<span>Nosso sistema</span>
+						<hr>
+					</div>		
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="placeholder-sistema-imagem">
+					</div>	
+				</div>
+				<div class="col-md-4">
+					<p class="texto">
+						A Vem Gerir é muito mais do
+						que uma ferramenta para
+						controlar o seu dinheiro.
+					</p>
+					<p class="texto">
+						É uma plataforma que te
+						ajuda a criar uma rotina
+						gerencial, a controlar suas
+						finanças e suas principais
+						tarefas
+					</p>	
 				</div>
 
 			</div>
+			
+			<br><br><br>
+
 		
 		</main><!-- #main -->
 	</div><!-- #primary -->

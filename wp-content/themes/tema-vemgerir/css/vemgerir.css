@@ -13,6 +13,9 @@ CSS template VemGerir.com.br
 # Footer
 --------------------------------------------------------------*/
 
+
+
+
 /*--------------------------------------------------------------
 # Tipografia Typekit
 --------------------------------------------------------------*/
@@ -411,6 +414,8 @@ h1 {
 	font-size: 40px;
 	color: #464A4A;
 	font-weight: normal;
+	margin-top: 15px;
+	text-align: center;
 }
 
 h2 {
@@ -522,7 +527,7 @@ p.texto {
 
 .content-area h1{
 	text-align: center;
-	margin:0px;
+	/*margin:0px;*/
 }
 
 .centralizar{
@@ -607,7 +612,7 @@ p.texto-box{
   font-family: interface;
   font-size: 20px;
   font-style: italic;
-  line-height: 1.4 !important;
+  line-height: 1.1;
   margin: 0;
   position: relative;
   text-shadow: 0 1px white;
@@ -619,25 +624,38 @@ p.texto-box{
 }
 
 .testimonial-quote blockquote p {
-  color: #75808a;
-  line-height: 1.4 !important;
+  color: #464A4A;
+  line-height: 1.1 !important;
 }
 
-.testimonial-quote blockquote p:first-child:before {
+.testimonial-quote blockquote p:before {
   content: '\201C';
-  color: #81bedb;
+  color: #c5ff7a;
   font-size: 7.5em;
   font-weight: 700;
-  opacity: .3;
+  opacity: .8;
   position: absolute;
-  top: -.4em;
-  left: -.2em;
+  top: -45px;
+  left: -35px;
+  text-shadow: none;
+  z-index: -300;
+}
+
+.testimonial-quote blockquote:after {
+  content: '\201D';
+  color: #c5ff7a;
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: .8;
+  position: absolute;
+  top: 65px;
+  right: 180px;
   text-shadow: none;
   z-index: -300;
 }
 
 .testimonial-quote img {
-  border: 3px solid #9CC1D3;
+  border: 2px solid #f5f5f5;
   border-radius: 50%;
   display: block;
   width: 120px;
@@ -685,7 +703,13 @@ p.texto-box{
   text-align: right;
 }
 
+.testimonial-quote {
+	margin-top: 15px;
+}
 
+.testimonial-quote blockquote p {
+	margin-bottom: 10px;
+}
 
 /*--------------------------------------------------------------
 # Conteudo-pagina-planos
@@ -696,12 +720,13 @@ p.texto-box{
 }
 
 .tabela-planos{
-	width: 28%;
+	margin-top: 15px;
 	float:left;
-	margin-left: 4%;
+	width: 100%;
 	margin-bottom: 20px;
 	
 }
+
 
 .tabela-planos tr{
 	height: 50px;
@@ -730,7 +755,7 @@ p.texto-box{
 	text-decoration: none;	
 }
 
-.nome-plano, .valor-plano, .peridiocidade-plano {
+.nome-plano, .valor-plano, .peridiocidade-plano, .nome-plano-sub {
  	text-align: center;
  	font-family: "co-headline";
  	color: white;
@@ -739,7 +764,11 @@ p.texto-box{
 .nome-plano{
 	font-size: 20px;
 	font-weight: lighter;
-	
+}
+
+.nome-plano-sub{
+	font-size: 16px;
+	font-weight: lighter;	
 }
 
 .valor-plano{
@@ -750,6 +779,7 @@ p.texto-box{
 .peridiocidade-plano{
 	font-size: 16px;
 	font-weight: lighter;
+	margin-bottom: 10px;
 }
 
 .icone-propriedade{
@@ -943,14 +973,22 @@ p.texto-box{
 
 .sistema-como-funciona{
 	background-color: #94e673;
-	height: 400px; 
+	height: 300px; 
 	margin-top: 30px;
 }
 
 .sistema-como-funciona .como-funciona-gif{
 	position: relative;
 	float:right;
-	top: 130px;
+	top: 30px;
+
+}
+
+.esq{
+	width:50%;
+	height: 100%;
+	background-color: #abe11e;
+	display: inline-block;
 }
 
 /*--------------------------------------------------------------

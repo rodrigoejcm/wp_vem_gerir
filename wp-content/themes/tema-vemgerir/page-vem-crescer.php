@@ -17,163 +17,122 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<h1 class="hmargem">Planos para você!</h1>
+
 			<div class="site-main-planos">
 				<div class="row">
-					<div class="tabela-planos verde-a col-md-4">
-						<table class="table-striped ">
-							<thead>
-								<tr>
-									<th>
-										<div class="nome-plano">Plano 1</div>
-										<hr class="hr-table">
-										<div class="valor-plano">R$ 00,00</div>
-										<div class="peridiocidade-plano">( por mŝs )</div>
-									</th>
-								</tr>	
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 1</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 2</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="cinza icone-propriedade">
-											<i class="fa fa-times fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 3</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="cinza icone-propriedade">
-											<i class="fa fa-times fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 4</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<a class="botao-tabela" href="#">
-							Assinar 
-						</a>	
+				
+					<div class="col-md-7">
+						<p class="texto">
+						Com um consultor online, você vai ter acesso a conteúdos mais importantes para o seu negócio e, com pequenas mudanças no seu dia a dia, você já vai conseguir ver o seu dinheiro no final do mês. Parece mágica, né? Mas não é. 
+						Vem gerir com a gente. É simples.
+						</p>
+					</div>
+					<div class="col-md-5">
+						<div class="tabela-planos verde-a">
+							<table class="table-striped ">
+								<thead>
+									<tr>
+										<th>
+											<div class="nome-plano">VEM CRESCER</div>
+											<div class="nome-plano-sub">Online</div>
+											<hr class="hr-table">
+											<div class="valor-plano">R$ 79,90</div>
+											<div class="peridiocidade-plano">( mensal )</div>
+										</th>
+									</tr>	
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="icone-propriedade">
+												<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+											</div>
+											<div class="descricao-propriedade">Sistema Gerencial</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icone-propriedade">
+												<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+											</div>
+											<div class="descricao-propriedade">Consultora à distância mensal</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icone-propriedade">
+												<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+											</div>
+											<div class="descricao-propriedade">Educação Gerencial à distância</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<a class="botao-tabela" href="#">
+								Assinar 
+							</a>	
+						</div>	
+					</div>
+				</div>					
+
+				<div class="row">
+					
+					<div class="col-md-7">
+						<p class="texto">
+							Você não sabe nem por onde começar a organizar toda a sua vida? Acha que somente o online não vai ser suficiente? Pois bem, nós entendemos e temos a solução perfeita pra você. Que tal um consultor especializado no seu segmento pra te auxiliar a tomar decisões e te guiar para o sucesso? A Vem Gerir tem consultores que vão até você para entender suas principais dificuldades e te ajuda a encontrar os melhores caminhos. Agende uma visita e vem gerir com a gente. É simples.
+						</p>
 					</div>
 
-					<div class="tabela-planos verde-b col-md-4">	
-						<table class="table-striped">
-							<thead>
-								<tr>
-									<th>
-										<div class="nome-plano">Plano 2</div>
-										<hr class="hr-table">
-										<div class="valor-plano">R$ 00,00</div>
-										<div class="peridiocidade-plano">( por mŝs )</div>
-									</th>
-								</tr>	
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 1</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 2</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 3</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="cinza icone-propriedade">
-											<i class="fa fa-times fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 4</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<a class="botao-tabela" href="#">
-							Assinar 
-						</a>
-					</div>
-					<div class="tabela-planos verde-c col-md-4">
-						<table class="table-striped">
-							<thead>
-								<tr>
-									<th>
-										<div class="nome-plano">Plano 3</div>
-										<hr class="hr-table">
-										<div class="valor-plano">R$ 00,00</div>
-										<div class="peridiocidade-plano">( por mŝs )</div>
-									</th>
-								</tr>	
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 1</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 2</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 3</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="icone-propriedade">
-											<i class="fa fa-check fa-2x" aria-hidden="true"></i>
-										</div>
-										<div class="descricao-propriedade">Propreidade 1</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<a class="botao-tabela" href="#">
-							Assinar 
-						</a>
-					</div>
+					<div class="col-md-5">
+
+						<div class="tabela-planos verde-b" >	
+							<table class="table-striped">
+								<thead>
+									<tr>
+										<th>
+											<div class="nome-plano">VEM CRESCER</div>
+											<div class="nome-plano-sub">Com Consultor</div>
+											<hr class="hr-table">
+											<div class="valor-plano">R$ 99,90</div>
+											<div class="peridiocidade-plano">( mensal )</div>
+										</th>
+									</tr>	
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="icone-propriedade">
+												<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+											</div>
+											<div class="descricao-propriedade">Sistema Gerencial</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icone-propriedade">
+												<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+											</div>
+											<div class="descricao-propriedade">Consultoria física mensal (somente grande rio) </div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icone-propriedade">
+												<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+											</div>
+											<div class="descricao-propriedade">Educação gerencial à distância</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<a class="botao-tabela" href="#">
+								Assinar 
+							</a>
+						</div>
+					</div>	
 				</div>
+
 					<div class="row">
 						
 						<div class="extra-planos col-md-12">

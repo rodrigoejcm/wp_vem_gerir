@@ -84,7 +84,7 @@ get_header(); ?>
 			<div class="site-main-clientes-depoimentos col-md-6">
 				
 				<div class="testimonial-quote group">
-			        <img src="http://placehold.it/120x120">
+			        <img src="<?php bloginfo('template_directory'); ?>/img/renato.jpg">
 			        <div class="quote-container">
 			            <blockquote>
 			                <p>	Seu Renato, após vender
