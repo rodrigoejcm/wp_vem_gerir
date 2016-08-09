@@ -174,9 +174,9 @@ nav #login-trigger {
 
 }
 
-nav #login-trigger {
+/*nav #login-trigger {
   border-radius: 3px 0 0 3px;
-}
+}*/
 
 nav #login-trigger:hover,
 nav #login .active {
@@ -285,6 +285,7 @@ form .submit-input:hover {
 #toggle.on + #menu {
   opacity: 1;
   visibility: visible;
+  
 }
 
 /* Menu - Menu responsivo - itens menu */
