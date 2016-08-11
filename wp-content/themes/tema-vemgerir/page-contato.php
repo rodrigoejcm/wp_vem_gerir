@@ -68,6 +68,10 @@ get_header(); ?>
 			</div>
 			<div class="col-md-6">
 				<div class="img-contato">
+
+					<div class="contato-tel">
+						(21) 3289-4781
+					</div>	
 					<img  src="<?=get_template_directory_uri().'/img/CONTATO.png' ?>">	
 				</div>
 				

@@ -35,13 +35,13 @@
 				<div class="col-md-6">
 						<div class="info-box info-vem-criar">
 							<div class="centralizar">
-								<p class="header header-box">Vem</p>
+								<p class="header header-box">vem</p>
 								<p class="header header-box">criar!</p>	
 								<p class="texto texto-box">
 									Se você quer iniciar seu próprio negócio, estaremos ao teu lado dando esse primeiro passo!
 								</p>
-								<a class="botao-box botao-box-verde-a" href="#">
-									Crie mais
+								<a class="botao-box botao-box-verde-a" href="<?php echo get_page_link(34);?>">
+									crie mais
 								</a>
 
 							</div>
@@ -52,13 +52,13 @@
 				<div class=" col-md-6">
 					<div class="info-box info-vem-crescer">
 							<div class="centralizar">
-								<p class="header header-box">Vem</p>
+								<p class="header header-box">vem</p>
 								<p class="header header-box">crescer!</p>	
 								<p class="texto texto-box">
 									Se você tem uma empresa, vamos organizar seu negócio juntos!
 								</p>
-								<a class="botao-box botao-box-verde-b" href="#">
-									Cresça mais
+								<a class="botao-box botao-box-verde-b" href="<?php echo get_page_link(32);?>">
+									cresça mais
 								</a>
 
 							</div>
@@ -76,6 +76,10 @@
 					<p class="header-texto">Nossos Clientes</p>	
 				</div>
 			</div>
+
+			<div class="hr-div">
+				<hr>
+			</div>	
 
 			<!-- ROW 4 -->
 
@@ -159,6 +163,9 @@
 				</div>
 			</div>
 
+			<div class="hr-div">
+				<hr>
+			</div>
 			
 
 			<div class="site-main-sistema row">
