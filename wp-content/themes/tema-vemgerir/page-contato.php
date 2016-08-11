@@ -16,8 +16,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<h1 class="hmargem">Entre em contato com a gente!</h1>
-		<p>Dê sua opnião, saiba mais sobre os nossos serviços, agende uma visita com nossos consultores...</p>
+		<h1 class="hmargem">Pode chegar! Você quer participar e nós queremos te ouvir!</h1>
+		
 		<div class="contato row">
 			<div class="col-md-6">		
 				<form id="form_contato" name="form_contato" method="post" action="http://www.vemgerir.com.br/nit_framework/act.php" target="iframe_valida_contato">
@@ -67,7 +67,10 @@ get_header(); ?>
 				</form>
 			</div>
 			<div class="col-md-6">
-				<img src="holder.js/100px366?textmode=literal?auto=yes"/>
+				<div class="img-contato">
+					<img  src="<?=get_template_directory_uri().'/img/CONTATO.png' ?>">	
+				</div>
+				
 			</div>
 		</div>
 

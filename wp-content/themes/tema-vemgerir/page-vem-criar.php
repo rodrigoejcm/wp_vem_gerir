@@ -17,9 +17,23 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<h1 class="hmargem">Vem Aprender</h1>
-
 			<div class="site-main-planos">
+
+			<div class="row">
+					
+					<div class="col-md-12">
+					
+						<div class="banner banner-criar">
+							<div class="banner-texto">
+								Queremos compartilhar com você os pontos necessários para criar seu negócio, mostrando de forma dinâmica e intuitiva quais são pilares centrais do empreendedorismo.
+								<br>
+								<span>Vem criar com a gente!</span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
 
 			<div class="row sistema">
 

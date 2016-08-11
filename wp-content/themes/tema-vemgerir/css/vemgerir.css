@@ -69,7 +69,7 @@ CSS template VemGerir.com.br
 
 .main-navigation a, .main-navigation a:visited {
 	font-family: "co-headline";
-	font-size: 16px;
+	font-size: 14px;
 	color: #464A4A;
 	word-spacing: -2px;
 }
@@ -90,7 +90,7 @@ CSS template VemGerir.com.br
 
 .site-login, .site-fb{
 	font-family: "co-headline";
-	font-size: 16px;
+	font-size: 14px;
 	border: 2px solid #3BD231;
 	color: #3BD231;
 	word-spacing: -2px;
@@ -131,15 +131,15 @@ CSS template VemGerir.com.br
 }
 
 .site-fb a {
-	padding: 3px 8px;
+	padding: 2px 7px;
 }
 
 .main-navigation li{
-	margin-left:15px;
+	margin-left:25px;
 }
 
 .site-login, .site-fb{
-	margin-left:15px;	
+	margin-left:25px;	
 }
 
 /*# Menu - highlight do item corrente */
@@ -167,8 +167,8 @@ nav #login-trigger {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  height: 25px;
-  line-height: 25px;
+  height: 22px;
+  /*line-height: 25px;*/
   padding: 0 8px;
   text-decoration: none;
 
@@ -187,7 +187,7 @@ color: white;
 nav #login-content {
   display: none;
   position: absolute;
-  top: 24px;
+  top: 22px;
   right: -2px;
   z-index: 999;    
   background: #3BD231;
@@ -266,8 +266,8 @@ form .submit-input:hover {
   width: 100%;
   height: 5px;
   background-color: #3BD231;
-  transition: all 0.3s;
-  backface-visibility: hidden;
+/*  transition: all 0.3s;
+  backface-visibility: hidden;*/
   border-radius: 2px;
 }
 
@@ -296,7 +296,7 @@ form .submit-input:hover {
   color: purple;
   text-align: center;
   font-family: "co-headline";
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   word-spacing: -2px;
   border-radius: 4px;
@@ -372,6 +372,10 @@ form .submit-input:hover {
 		background: #3BD231;
 		color: white;
 	}
+
+	.site-login, .site-fb {
+    	margin-left: 15px;
+	}
 }
 
 @media screen and (max-width: 780px) {
@@ -397,6 +401,16 @@ form .submit-input:hover {
 		border:none !important;
 	}
 
+	.site-login, .site-fb {
+    	margin-left: 15px;
+	}
+
+	p.texto-index{
+		font-size: 18px !important;
+		padding: 5px 0 !important;
+	}
+
+
 
 }
 
@@ -412,18 +426,23 @@ form .submit-input:hover {
 
 h1 {
 	font-family: "co-headline";
-	font-size: 40px;
+	font-size: 30px;
 	color: #464A4A;
-	font-weight: normal;
+	font-weight: 300;
 	margin-top: 15px;
 	text-align: center;
 }
+
 
 h2 {
 	font-family: "co-headline";
 	font-size: 30px;
 	color: #464A4A;
 	font-weight: normal;
+}
+
+.cor-verde{
+	color: #3BD231 !important;
 }
 
 .hmargem {
@@ -444,6 +463,16 @@ p.texto {
 	margin-top: 15px;
 	margin-bottom: 15px;
 
+}
+
+.header-texto{
+	font-family: "interface";
+	line-height: 1.4;
+
+	text-align: center;
+	font-size: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;	
 }
 
 
@@ -532,10 +561,11 @@ p.texto {
 }
 
 .centralizar{
-
+	height: 250px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	padding: 0 100px;
   
 
 }
@@ -543,11 +573,25 @@ p.texto {
 
 .info-box {
 	height: 380px;
-	background-color: #F5F5F5;
+	
 	padding:28px;
 	margin-bottom: 15px;
+}
 
+.info-vem-criar{
+	background-image: url("../img/VEM CRIAR - home.png");
+	margin-right: 15px;
+	background-repeat: no-repeat;
+}
 
+.info-vem-crescer{
+	background-image: url("../img/VEM CRESCER - home.png");
+	margin-left: 15px; 
+	background-repeat: no-repeat;
+}
+
+.header-box{
+	color: white;
 }
 
 p.header{
@@ -555,7 +599,7 @@ p.header{
 	font-family: "co-headline";
 	font-size: 45px;
 	font-weight: lighter;
-	margin-bottom: -38px;
+	margin-bottom: -25px;
 	text-align: center;
 
 
@@ -563,6 +607,12 @@ p.header{
 
 p.texto-box{
 	margin-top: 40px;
+	height: 100px;
+	font-weight: 500;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	line-height: 1.4;
 
 }
 
@@ -590,127 +640,133 @@ p.texto-box{
 }
 
 .site-main-sistema-descricao {
-	/*alterar pelo placeholder*/	
+	margin-right: 15px;
+}
+
+.site-main-sistema-descricao p{
+	text-align: center;
 }
 
 .site-main-sistema-imagem {
-	/*alterar pelo placeholder*/	
+	margin-left: 15px;
 }
 
 /*Blockquote teste*/
 
-.testimonial-quote {
-  font-size: 16px;
-}
 
-.testimonial-quote blockquote {
-  /* Negate theme styles */
-  border: 0;
-  margin: 0;
-  padding: 0;
-  background: none;
-  color: gray;
-  font-family: interface;
-  font-size: 20px;
-  font-style: italic;
-  line-height: 1.1;
-  margin: 0;
-  position: relative;
-  text-shadow: 0 1px white;
-  z-index: 600;
-}
 
-.testimonial-quote blockquote * {
-  box-sizing: border-box;
-}
-
-.testimonial-quote blockquote p {
-  color: #464A4A;
-  line-height: 1.1 !important;
-}
-
-.testimonial-quote blockquote p:before {
+.dep:before {
   content: '\201C';
-  color: #c5ff7a;
-  font-size: 7.5em;
+  font-family: 'interface';
+  text-align: center;
+  color: #D4FF87;
+  font-size: 140px;
   font-weight: 700;
   opacity: .8;
-  position: absolute;
-  top: -45px;
-  left: -35px;
   text-shadow: none;
   z-index: -300;
+  display: block;
+  margin-bottom: -100px;
+  margin-top: -65px;
 }
+  
 
-.testimonial-quote blockquote:after {
+.dep:after {
   content: '\201D';
-  color: #c5ff7a;
-  font-size: 7.5em;
+  font-family: 'interface';
+  text-align: center;
+  color: #D4FF87;
+  font-size: 140px;
   font-weight: 700;
   opacity: .8;
-  position: absolute;
-  top: 65px;
-  right: 180px;
   text-shadow: none;
   z-index: -300;
-}
-
-.testimonial-quote img {
-  border: 2px solid #f5f5f5;
-  border-radius: 50%;
   display: block;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: -.2em;
-  left: 0;
+  margin-top: -40px;
+   margin-bottom: -100px;
+
+
 }
 
-.testimonial-quote cite {
-  color: gray;
-  display: block;
-  font-size: .8em;
+.slider p{
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: center;
+	height: 190px;
+	padding: 0 100px;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
 }
 
-.testimonial-quote cite span {
-  color: #5e5e5e;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px white;
+.slider cite{
+	text-align: cener;
 }
 
-.testimonial-quote {
-  position: relative;
+
+.texto-index{
+	font-family: "co-headline";
+	font-size: 25px !important;
+	font-weight: lighter !important;
+	
+	padding: 15px 100px !important;
+	text-align: center !important;
 }
 
-.testimonial-quote .quote-container {
-  padding-left: 160px;
+.texto-index span{
+	color: #3BD231;
 }
 
-.testimonial-quote.right .quote-container {
-  padding-left: 0;
-  padding-right: 160px;
+
+
+
+.botao-box{
+	width: 80%;
+	font-family: "co-headline";
+	font-size: 16px;
+	background-color: white;
+	display: block;
+	color: white;
+	background-color: transparent;
+    margin-left: 10%;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 10px;
+	position: relative;
+	height: 36px;
+	font-family: "co-headline";
+	font-size: 20px;
+	border: 2px solid white;
+	color: #3BD231;
+	word-spacing: -2px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
-.testimonial-quote.right img {
-  left: auto;
-  right: 0;
+
+
+
+.botao-box-verde-a:hover{
+	border: 2px solid #ABE11E;
+	text-decoration: none;
+	background-color: #ABE11E;
 }
 
-.testimonial-quote.right cite {
-  text-align: right;
+.botao-box-verde-b:hover{
+	border: 2px solid #3BD231;
+	background-color: #3BD231;
+	text-decoration: none;
 }
 
-.testimonial-quote {
-	margin-top: 15px;
+
+.botao-box:visited {
+	text-decoration: none;
+	color: white;	
 }
 
-.testimonial-quote blockquote p {
-	margin-bottom: 10px;
-}
 
 /*--------------------------------------------------------------
 # Conteudo-pagina-planos
@@ -825,6 +881,39 @@ p.texto-box{
 	font-size: 14px;
     line-height: 1.1;
 } 
+
+.banner{
+	height: 300px;
+	background-position: -100px 0; 
+	padding:20px;
+	min-width: 300px;
+}
+
+.banner-crescer{
+	background-image: url("../img/VEM CRESCER- banner.png");
+}
+
+.banner-criar{
+	background-image: url("../img/VEM CRIAR - banner.png");
+}
+
+
+.banner-texto{
+	font-family: 'co-headline';
+	font-size: 20px;
+	width: 330px;
+	color: white;
+	line-height: 1.2;
+}
+
+.banner-texto span{
+	color: #48B60F;
+	display: block;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 20px;
+}
+	
 
 /* --Cores Tabela*/
 
@@ -1041,6 +1130,9 @@ form .botao-form-contato{
 	color: #999;
 }
 
+.img-contato{
+	margin-top: 10px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

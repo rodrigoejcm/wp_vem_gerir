@@ -111,6 +111,8 @@ function tema_vemgerir_scripts() {
 
 	wp_enqueue_style( 'tema-vemgerir-style-vemgerir', get_template_directory_uri() . '/css/vemgerir.css' );
 	
+	wp_enqueue_style( 'tema-vemgerir-style-slider', get_template_directory_uri() . '/css/slick.css' );
+
 	wp_enqueue_script( 'tema-vemgerir-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'tema-vemgerir-js-vemgerir', get_template_directory_uri() . '/js/vemgerir.js', array(), '20151215', true );
@@ -151,6 +153,8 @@ function tema_vemgerir_scripts() {
         wp_enqueue_script('tema-vemgerir-holder-js');
     }
 
+
+    wp_enqueue_script( 'tema-vemgerir-slider', get_template_directory_uri() . '/js/slick.min.js', array(), '20151215', false );
 
 
 

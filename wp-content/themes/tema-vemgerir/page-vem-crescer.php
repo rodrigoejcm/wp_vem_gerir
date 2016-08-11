@@ -17,9 +17,27 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<h1 class="hmargem">Planos para você!</h1>
-
 			<div class="site-main-planos">
+				
+				<div class="row">
+					
+					<div class="col-md-12">
+					
+						<div class="banner banner-crescer">
+							<div class="banner-texto">
+								Contas a pagar, dinheiro pra receber, funcionários e fornecedores pra controlar, atendimento ao cliente... Difícil gerenciar tudo isso sozinho, não é? Foi pensando em você que criamos nossas soluções para simplificar a sua vida.
+								<br>
+								<span>Vem crescer com a gente</span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+
 				<div class="row">
 				
 					<div class="col-md-7">

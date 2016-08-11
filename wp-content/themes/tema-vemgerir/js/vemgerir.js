@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+    $('.dep-info ').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        arrows: false,
+        /*adaptiveHeight:true,*/
+      });
+
+  
+
   $('#login-trigger').click(function(){
     $(this).next('#login-content').slideToggle();
     $(this).toggleClass('active');          
@@ -6,6 +18,8 @@ $(document).ready(function(){
     })
 
 });
+
+ 
 
 var theToggle = document.getElementById('toggle');
 
@@ -49,3 +63,4 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
+
