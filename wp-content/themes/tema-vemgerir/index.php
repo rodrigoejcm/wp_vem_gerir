@@ -40,8 +40,8 @@
 								<p class="texto texto-box">
 									Se você quer iniciar seu próprio negócio, estaremos ao teu lado dando esse primeiro passo!
 								</p>
-								<a class="botao-box botao-box-verde-a" href="<?php echo get_page_link(34);?>">
-									crie mais
+								<a class="botao-box botao-box-verde-a" href="<?php echo get_permalink( get_page_by_title( 'Vem Criar' ) );?>">
+									vem criar
 								</a>
 
 							</div>
@@ -57,8 +57,8 @@
 								<p class="texto texto-box">
 									Se você tem uma empresa, vamos organizar seu negócio juntos!
 								</p>
-								<a class="botao-box botao-box-verde-b" href="<?php echo get_page_link(32);?>">
-									cresça mais
+								<a class="botao-box botao-box-verde-b" href="<?php echo get_permalink( get_page_by_title( 'Vem Crescer' ) );?>">
+									vem crecer
 								</a>
 
 							</div>
@@ -73,13 +73,15 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<p class="header-texto">Nossos Clientes</p>	
+					<div class="header-texto">
+						<p>Nossos Clientes</p>		
+					</div>
+					<div class="hr-div">
+						<hr>
+					</div>
 				</div>
 			</div>
 
-			<div class="hr-div">
-				<hr>
-			</div>	
 
 			<!-- ROW 4 -->
 
@@ -159,13 +161,16 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<p class="header-texto">Nosso Sistema</p>	
+					<div class="header-texto">
+						<p>Nosso Sistema</p>	
+					</div>
+					<div class="hr-div">
+						<hr>
+					</div>
 				</div>
 			</div>
 
-			<div class="hr-div">
-				<hr>
-			</div>
+			
 			
 
 			<div class="site-main-sistema row">

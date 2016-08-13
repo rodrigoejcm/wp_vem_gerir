@@ -9,6 +9,8 @@ $(document).ready(function(){
         /*adaptiveHeight:true,*/
       });
 
+    
+
   
 
   $('#login-trigger').click(function(){

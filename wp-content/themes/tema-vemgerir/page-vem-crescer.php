@@ -35,8 +35,6 @@ get_header(); ?>
 
 			</div>
 
-			<br>
-
 			<h1 class="vci-header">Vem Crescer</h1>
 			<span class="vci-sub-header texto-cor-verce-3BD231">consultor on-line</span>
 
@@ -81,7 +79,7 @@ get_header(); ?>
 								<div class="descricao-assinatura col-md-12">
 									
 									<div class="descricao-assine">
-										<a href="#" class="descricao-assine-botao">
+										<a href="#" class="descricao-assine-botao botao-3BD231">
 											<p>Assine!</p>
 										</a>
 									</div>
@@ -121,13 +119,15 @@ get_header(); ?>
 										<div class="descricao-propriedade">
 											Sistema Gerencial
 										</div>
-										<div class="icone-propriedade verde-a">
-											<i class="fa fa-check fa-3x" aria-hidden="true"></i>
-										</div>
-										
-										<div class="descricao-propriedade ">
-											Consultor presencial mensal <span>(somente grande rio)</span>
-										</div>
+										<div style="display:block">
+											<div class="icone-propriedade verde-a">
+												<i class="fa fa-check fa-3x" aria-hidden="true"></i>
+											</div>
+											
+											<div class="descricao-propriedade ">
+												Consultor presencial mensal <span>(somente grande rio)</span>
+											</div>
+										</div>	
 										<div class="icone-propriedade verde-a">
 											<i class="fa fa-check fa-3x" aria-hidden="true"></i>
 										</div>
@@ -139,7 +139,7 @@ get_header(); ?>
 								<div class="row">
 									<div class="descricao-assinatura col-md-12">
 										<div class="descricao-assine">
-											<a href="#" class="descricao-assine-botao">
+											<a href="#" class="descricao-assine-botao botao-1D9649">
 												<p>Assine!</p>
 											</a>
 										</div>
