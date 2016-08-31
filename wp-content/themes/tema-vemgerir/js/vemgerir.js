@@ -1,4 +1,40 @@
+(function ($) {
+$.fn.vAlign = function() {
+    return this.each(function(i){
+        $(this).children().wrapAll('<div class="nitinh-vAlign" style="position:relative;"></div>');
+        var div = $(this).children('div.nitinh-vAlign');
+        var ph = $(this).innerHeight();
+        var dh = div.height();
+        var mh = (ph - dh) / 2;
+        div.css('top', mh);
+    });
+};
+})(jQuery);
+
+
 $(document).ready(function(){
+
+    
+    $( ".conteudo-vci-sistema").vAlign();    
+
+    $( ".nosso-sistema" ).closest('.site').css("background-color","#94E673");
+    /*.css("background-color","#94E673");*/
+
+    $('.superheader-vemcriar').parallax({imageSrc: path_vemgerir.img_path + 'vemcriar-banner.png'});
+    $('.superheader-vemcrescer').parallax({imageSrc: path_vemgerir.img_path + 'vemcrescer-banner.jpg'});
+    $('.superheader-home').parallax({imageSrc: path_vemgerir.img_path + 'banner-home.jpg'});
+    
+    $('.intro-scroll-down').on('click', function(){
+        var this_el = $('.area-visivel');
+        var altura = this_el.height()+90;
+       $('body, html').animate({'scrollTop':altura});
+
+    });
+    
+    $("#toggle").click(function() {
+       $(this).toggleClass("on");
+    });
+
 
     $('.dep-info ').slick({
         slidesToShow: 1,
@@ -10,9 +46,6 @@ $(document).ready(function(){
       });
 
     
-
-  
-
   $('#login-trigger').click(function(){
     $(this).next('#login-content').slideToggle();
     $(this).toggleClass('active');          
@@ -23,7 +56,17 @@ $(document).ready(function(){
 
  
 
-var theToggle = document.getElementById('toggle');
+/*var theToggle = document.getElementById('toggle');
+console.log(theToggle);
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}*/
+
+
+
+
 
 // based on Todd Motto functions
 // http://toddmotto.com/labs/reusable-js/
@@ -61,8 +104,5 @@ function toggleClass(elem, className) {
     }
 }
 
-theToggle.onclick = function() {
-   toggleClass(this, 'on');
-   return false;
-}
+
 

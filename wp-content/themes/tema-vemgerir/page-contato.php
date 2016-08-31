@@ -19,7 +19,7 @@ get_header(); ?>
 		<h1 class="hmargem">Pode chegar! Você quer participar e nós queremos te ouvir!</h1>
 		
 		<div class="contato row">
-			<div class="col-md-6">		
+			<div class="col-md-6 col-xs-12">		
 				<form id="form_contato" name="form_contato" method="post" action="http://www.vemgerir.com.br/nit_framework/act.php" target="iframe_valida_contato">
 					<input type="hidden" name="acao" id="acao" value="enviar" align="left">
 					<input type="hidden" name="classe" id="classe" value="contato" align="left">
@@ -66,7 +66,7 @@ get_header(); ?>
 					<input class="botao-form-contato" type="submit" name="logar" value="Enviar">
 				</form>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-xs-12">
 				<div class="img-contato">
 
 					<div class="contato-tel">

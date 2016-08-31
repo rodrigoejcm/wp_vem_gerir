@@ -17,6 +17,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div 	class="parallax-window superheader-vemcriar" 
+					data-parallax="scroll" >
+		</div>
+
 			<div class="site-main-planos">
 
 				<div class="row">
@@ -24,10 +28,9 @@ get_header(); ?>
 						<div class="col-md-12">
 						
 							<div class="banner banner-criar">
-								<div class="banner-texto">
-									Queremos compartilhar com você os pontos necessários para criar seu negócio, mostrando de forma dinâmica e intuitiva quais são pilares centrais do empreendedorismo.
-									<br>
-									<span class="cor-abe11e">Vem criar com a gente!</span>
+								<span class="cor-abe11e texto-realce ">Vem criar com a gente!</span>
+								<div class="banner-texto ">
+									Um time de consultores disponível para te ajudar a fazer o seu sonho sair do papel e se tornar realidade.
 								</div>
 							</div>
 
@@ -45,28 +48,22 @@ get_header(); ?>
 
 							<div class="row">
 
-								<div class="col-md-6">
+								<div class="col-md-6 sem-margem-padrao" >
 									<p class="texto">
-										O curso se divide em 6 módulos, abordadando as disciplinas consideradas essenciais para a criação e gestâo do seu empreendimento.
+										Vamos sentar com você e construir um plano de negócios para alavancar a sua ideia. Começamos conhecendo o produto/serviço e avançamos para discussões práticas das etapas necessárias a serem cumpridas para que sua empresa ganhe forma e, o mais importante, que ela consiga ser rentável!
 									</p>
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-12">
 									<div class="row">
-										<div class="descricao-resumo">	
+										<div class="descricao-resumo col-md-12">	
 											<div class="icone-propriedade verde-c">
 												<i class="fa fa-check fa-3x" aria-hidden="true"></i>
 											</div>
 											<div class="descricao-propriedade">
-												Curso on-line
+												Consultor a distância mensal
 											</div>
 
-											<div class="icone-propriedade verde-c">
-												<i class="fa fa-check fa-3x" aria-hidden="true"></i>
-											</div>
-											<div class="descricao-propriedade ">
-												Carga horária de 36h
-											</div>
 										</div>
 									</div>
 									<div class="row">
@@ -87,7 +84,9 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<div class="row">
+				<br><br><br><br>
+
+				<!-- <div class="row">
 					<div class="col-md-12">
 						<div class="header-texto">
 							<p >Nossos módulos</p>	
@@ -98,7 +97,7 @@ get_header(); ?>
 					</div>
 				</div>
 
-				
+				<br><br><br>
 
 				<div class="sistema">
 					<div class="row">
@@ -181,10 +180,10 @@ get_header(); ?>
 								</div>
 								<div class="conteudo-vci-desc">
 									<p>
-									No módulo iremos mostrar que o
+									Nesse módulo iremos mostrar que o
 									Marketing é uma disciplina que engloba o
 									planejamento estratégico de um
-									produto, desde sua concepção, a pesquisa
+									produto, desde sua concepção à pesquisa
 									de mercado, os canais de distribuição até
 									as vendas e a comunicação.
 									Vamos destacar pontos importantes do
@@ -273,11 +272,11 @@ get_header(); ?>
 									debater a diferença entre Criatividade
 									e Inovação.
 									Teremos a missão de transformar a
-									complexa analise de tendência em
+									complexa análise de tendência em
 									algo prazeroso e fácil para nos
 									anteciparmos no mercado.
 									Vamos estudar os comportamentos e
-									expressões individuas, e como esses
+									expressões individuais, e como esses
 									são impactantes na geração de ideias.
 									</p>
 								</div>
@@ -285,7 +284,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-
+ -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

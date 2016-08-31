@@ -36,7 +36,7 @@
 				</a>
 			</div><!-- .site-branding -->
 		
-			<a href="#menu" id="toggle"><span></span></a>
+			<a href="#" id="toggle"><span></span></a>
 
 			<div id="menu">
 						    

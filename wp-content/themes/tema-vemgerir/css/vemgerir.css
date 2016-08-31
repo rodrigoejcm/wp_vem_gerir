@@ -57,6 +57,7 @@ CSS template VemGerir.com.br
  
 /*# Menu - Ajustes de Floats*/ 
 
+
 .site-logo{
 	float:left;
 }
@@ -474,21 +475,25 @@ p.texto {
 	line-height: 1.4;
 	width: 100%;
 	/*margin-top: 15px;*/
-	margin-bottom: 15px;	
+	margin-bottom: 8px;	
 	text-align: center;
 
-	
-	
 }
+
 
 .header-texto p{
 	margin:0 auto;
 	display: inline-block;	
 	background-color: white;
 	text-align: center;
-	font-size: 25px;
+	font-size: 35px;
 	clear: left;
 }
+
+.ht-sistema p{
+	background-color: #94E673;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -497,6 +502,8 @@ p.texto {
 .site-header {
 	height: 90px;
 	border-bottom: 2px solid #f0f0f0;
+	background-color: white;
+
 
 }
 
@@ -549,11 +556,107 @@ p.texto {
 	margin: 10px 35px;	
 }
 
+.hr-div-sistema hr{
+	background-color: #3e484b;
+}
+
+
+
 
 
 /*--------------------------------------------------------------
 # Conteudo-pagina-inicial
 --------------------------------------------------------------*/
+
+.superheader-home{
+	position: absolute;
+	top: 90px;
+	left:0;
+	z-index: -1;
+	width: 100%;
+	height: 90vh;
+	-webkit-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    
+    display: block;
+    background: transparent;
+
+	
+}
+
+.superheader-home img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.area-visivel{
+	height: 90vh;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.double-row{
+	margin-top: -60px;
+}
+
+
+/*SCROLL*/
+.intro-scroll-down {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top:95vh;
+    margin-left: -25px;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+
+
+/*fim scroll*/
+
+
+.superheader-vemcriar{
+	position: absolute;
+	top: 90px;
+	left:0;
+	z-index: -1;
+	width: 100%;
+	-webkit-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    min-height: 300px;
+    background: transparent;
+
+	
+}
+
+
+
+.superheader-vemcrescer{
+	position: absolute;
+	top: 90px;
+	left:0;
+	z-index: -1;
+	width: 100%;
+	-webkit-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    min-height: 300px;
+    background: transparent;
+	
+}
+
+
+
 
 .site-main-intro {
 	height: 300px;
@@ -581,29 +684,40 @@ p.texto {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	padding: 0 100px;
+	padding: 0 30px;
   
 
 }
 
 
 .info-box {
-	height: 380px;
-	
+	height: 280px;
+	-webkit-box-shadow: -1px 3px 5px 3px rgba(0,0,0,0.25);
+	-moz-box-shadow: -1px 3px 5px 3px rgba(0,0,0,0.25);
+	box-shadow: -1px 3px 5px 3px rgba(0,0,0,0.25);
 	padding:28px;
 	margin-bottom: 15px;
-}
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+
+
+	}
 
 .info-vem-criar{
-	background-image: url("../img/VEM CRIAR - home.png");
-	margin-right: 15px;
+	background-color: white;
+	
+	margin-left: 110px;
 	background-repeat: no-repeat;
 }
 
 .info-vem-crescer{
-	background-image: url("../img/VEM CRESCER - home.png");
-	margin-left: 15px; 
+	background-color: white;
+	
 	background-repeat: no-repeat;
+	margin-right: 110px;
+
 }
 
 .header-box{
@@ -622,14 +736,14 @@ p.header{
 }
 
 p.texto-box{
-	margin-top: 40px;
+	margin-top: 20px;
 	height: 100px;
 	font-weight: 500;
-	color: white;
-	font-size: 15px;
+	color: #464A4A;
+	font-size:20px;
 	text-align: center;
 	line-height: 1.4;
-	text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+	/*text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);*/
 
 }
 
@@ -658,6 +772,12 @@ p.texto-box{
 
 .site-main-sistema-descricao {
 	margin-right: 15px;
+	padding: 0 50px;
+}
+
+.site-main-sistema-descricao .texto{
+	font-size: 25px;
+	margin-bottom: 30px;
 }
 
 .site-main-sistema-descricao p{
@@ -725,14 +845,15 @@ p.texto-box{
 	font-family: "co-headline";
 	font-size: 25px !important;
 	font-weight: lighter !important;
-	
+	color: white;
 	padding: 15px 100px !important;
 	text-align: center !important;
 }
 
 .texto-index span{
-	color: #3BD231;
+	font-weight: bold;
 }
+
 
 
 
@@ -740,10 +861,10 @@ p.texto-box{
 .botao-box{
 	width: 80%;
 	font-family: "co-headline";
-	font-size: 16px;
+	
 	background-color: white;
 	display: block;
-	color: white;
+	
 	background-color: transparent;
     margin-left: 10%;
     text-align: center;
@@ -752,9 +873,10 @@ p.texto-box{
 	border-radius: 4px;
 	margin-top: 10px;
 	position: relative;
-	height: 36px;
+	bottom: -40px;
+	height: 45px;
 	font-family: "co-headline";
-	font-size: 20px;
+	font-size: 25px;
 	border: 2px solid white;
 	
 	word-spacing: -2px;
@@ -766,14 +888,14 @@ p.texto-box{
 
 
 
-.botao-box-verde-a:hover{
+.botao-box-verde-a{
 	color: white;
 	border: 2px solid #ABE11E;
 	text-decoration: none;
 	background-color: #ABE11E;
 }
 
-.botao-box-verde-b:hover{
+.botao-box-verde-b{
 	color: white;
 	border: 2px solid #3BD231;
 	background-color: #3BD231;
@@ -795,7 +917,7 @@ p.texto-box{
 
 
 .site-main-planos{
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .tabela-planos{
@@ -908,25 +1030,26 @@ p.texto-box{
 .banner{
 	height: 300px;
 	background-position: -100px 0; 
-	padding: 40px 20px ;
+	padding: 40px 0 ;
 	min-width: 300px;
 }
 
 .banner-crescer{
-	background-image: url("../img/VEM CRESCER- banner.png");
+	padding: 25px 0 ;
 }
 
 .banner-criar{
-	background-image: url("../img/VEM CRIAR - banner.png");
+	/*background-image: url("../img/VEM CRIAR - banner.png");*/
 }
 
 
 .banner-texto{
 	font-family: 'interface';
 	font-size: 20px;
-	width: 260px;
+	width: 300px;
 	color: white;
-	line-height: 1.2;
+	line-height: 1.4;
+	margin-top: -5px;
 }
 
 .banner-texto span{
@@ -936,21 +1059,26 @@ p.texto-box{
 
 }
 
+.banner-texto-vemcrescer{
+	width: 360px;
+}
+
 .vem-crescer-planos{
 	border-top: 1px solid #f0f0f0;
 	padding: 15px;
+	padding-top: 50px;
 }
 
 .vem-criar-planos{
 	border-top: 1px solid #f0f0f0;
-	padding: 15px;
+	padding: 50px 0;
 }
 
 .vci-header{
 	font-size: 25px;
 	font-family: 'co-headline';
 	text-align: left !important;
-	margin-bottom: -10px;
+	margin-bottom: -5px;
 	top:15px;
 	position: relative;
 	z-index: 300;
@@ -968,6 +1096,7 @@ p.texto-box{
 	font-family: 'co-headline';
 	text-align: center !important;
 	font-weight: 300;
+
 }
 
 
@@ -990,7 +1119,10 @@ p.texto-box{
 	font-family: 'interface';
 	text-align: center !important;
 	/*padding: 0 50px;*/
+
 }
+
+
 
 
 .vci-sub-header{
@@ -1066,7 +1198,7 @@ p.texto-box{
 	background-color: #1D9649;
 }
 
-1D9649
+
 
 .botao-abe11e{
 	background-color: #abe11e;
@@ -1099,13 +1231,19 @@ p.texto-box{
 
 /* --Vem Criar*/
 
+.texto-realce {
+	font-size: 35px;
+	display: block;
+	margin-bottom: 15px;
+}
+
 .conteudo-vci {
 	/*border: 1px solid #f0f0f0;*/
 	padding: 0 20px;
 	border: 2px solid #f0f0f0;
 	margin-top: 40px;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 100px;
 	height: 420px;
 }
 
@@ -1128,15 +1266,96 @@ p.texto-box{
 	font-weight: lighter;
 }
 
+
+
+.conteudo-vci-icone-sistema{
+	width: 120px;
+	margin:0 auto ;
+	height: 120px;
+	margin-top: -50px;
+	
+}
+
+.conteudo-vci-icone-sistema img{
+	background-color: white;
+	
+}
+
+
+.conteudo-vci-sistema {
+	/*border: 1px solid #f0f0f0;*/
+	margin: 0 80px;
+	border: 2px solid #f0f0f0;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	
+}
+
+.conteudo-vci-icone-sistema{
+	width: 120px;
+	margin:0 auto ;
+	height: 120px;
+	margin-top: -50px;
+	
+}
+
+.conteudo-vci-icone-sistema img{
+	background-color: white;
+	
+}
+
+.conteudo-vci-disci-sistema{
+
+	height: 50px;
+	font-weight: lighter;
+
+}
+
+.conteudo-vci-disci-sistema h1{
+	color: white;
+}
+
+
+
+.central520{
+	height:520px;
+}
+
+.central400{
+	height:400px;
+}
+
+
+
+
 .conteudo-vci-sistema{
 	padding: 0 30px;
 	font-weight: lighter;
+	position: relative;
+	bottom: 2px;
+
 }
+
+.conteudo-vci-sistema-imagem{
+	border:0;
+}
+.vci-rotina{
+	margin-top: 60px;
+}
+
+.vci-painel{
+	margin-top: 100px;
+}
+
+.vci-cadastro{
+	margin-top: 60px;
+}
+
 
 .conteudo-vci-print{
 	width: 400px;
-	margin:0 auto ;
-	height: 300px;
+	margin: 0 auto ;
+	
 	
 }
 
@@ -1254,9 +1473,16 @@ p.texto-box{
     
 }
 
+
+.sem-margem-padrao{
+	margin-left: -15px;
+}
+
 /*--------------------------------------------------------------
 # Conteudo-pagina-sistema
 --------------------------------------------------------------*/
+
+
 
 .sistema{
 	margin-top: 25px;
@@ -1301,19 +1527,19 @@ p.texto-box{
 .sistema-como-funciona{
 	background-color: #94e673;
 	height: 300px; 
-	margin-top: 40px;
+	
 }
 
 .sistema-como-funciona .como-funciona-gif{
 	position: relative;
 	float:right;
-	top: 30px;
+	top: 10px;
 
 }
 
 .esq{
-	padding: 14px;
-	width:30%;
+	padding-top: 80px;
+	width:55%;
 	height: 100%;
 	display: inline-block;
 	font-family: 'co-headline';
@@ -1322,7 +1548,13 @@ p.texto-box{
 }
 
 .esq .texto{
-	font-size: 25px !important;
+	font-size: 35px !important;
+	color: #3E484B;
+	line-height: 1;
+}
+
+.esq .texto span{
+	font-family: 'co-headline';
 	color: white;
 }
 
@@ -1405,6 +1637,34 @@ form .botao-form-contato{
 	text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
 }
 
+
+
+/*--------------------------------------------------------------
+# Conteudo Form
+--------------------------------------------------------------*/
+
+
+	  .error{
+	    padding: 5px 9px;
+	    border: 1px solid red;
+	    color: red;
+	    border-radius: 3px;
+	  }
+	 
+	  .success{
+	    padding: 5px 9px;
+	    border: 1px solid green;
+	    color: green;
+	    border-radius: 3px;
+	  }
+	 
+	  form span{
+	    color: red;
+	  }
+	
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1415,7 +1675,7 @@ html{
 }
 
 #content{
- 	margin-bottom:90px;
+ 	padding-bottom:90px;
 } 
 
 .site-footer{
@@ -1479,4 +1739,260 @@ html{
 	background-color: #f5f5f5;
 	border: 1px solid black;
 	margin-top: 24px;
+}
+
+
+
+
+.only-responsivo{
+	display: none !important;
+}
+
+/*--------------------------------------------------------------
+# Reesponsivo
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 780px) {
+	.centralizar{
+		    padding: 0 11px;
+		    height: 160px;
+	}
+
+	.botao-box{
+		margin-top: 33px;
+		font-size: 20px;
+		height: 40px;
+	}
+
+	.info-vem-criar, .info-vem-crescer{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.info-box {
+    	height: 140px;
+    	padding: 1px;
+	}
+
+	p.texto-box {
+		font-size: 17px;
+		height: 0;
+	}
+
+	p.texto-index{
+		margin-top: 60px;
+	}
+
+	.site-main-sistema-imagem{
+		margin-left: 0px;
+	}
+
+	.site-main-sistema-descricao{
+	    padding: 0 10px;
+	}
+
+	.site-main-sistema-descricao .texto{
+		font-size: 18px;
+	}
+
+	.superheader-home{
+		height: 29%;
+	}
+
+	.site-main-sistema{
+		margin-top: -35px;
+	}
+	
+
+	.slider p {
+		padding: 0;
+	}
+
+	.area-visivel {
+    	height: 90vh;
+    }
+
+    .header-texto{
+    	margin-top: 50px;
+    }
+
+    .dep:after{
+        margin-bottom: -148px;
+	}
+
+	.intro-scroll-down{
+		display: none;
+	}
+
+	.nao-responsivo{
+		display: none !important;
+	}
+
+	.only-responsivo{
+		visibility: visible ;
+		display: block !important;
+	}
+
+	.site-footer {
+    	position: absolute;
+ 		bottom: -90px;
+    	left: 0;
+    	right: 0;
+    	height: 121px;
+    	background-color: #3BD231;
+	}
+
+	.texto-realce {
+ 	    font-size: 25px;
+    	display: block;
+    	margin-bottom: 15px;
+	}
+
+	.vci-sub-header {
+    	font-size: 22px;
+	}
+
+	.banner {
+	    margin-left: -15px;
+	    height: 300px;
+    	background-position: -100px 0;
+    	padding: 40px 0;
+    	min-width: 300px;
+	}
+
+	.banner-texto-vemcrescer {
+    	width: 300px;
+	}
+
+	.banner-texto {
+    	font-family: 'interface';
+    	font-size: 18px;
+    	width: 300px;
+    	color: white;
+    	line-height: 1.4;
+    	margin-top: -5px;
+	}
+
+
+	.vem-crescer-planos {
+ 	   	
+ 	   	padding: 0px;
+    	padding-top: 25px;
+	}
+
+	.descricao-propriedade {
+	    /* width: 90%; */
+	    float: none; 
+	    font-family: 'co-headline';
+	    font-size: 16px;
+	    display: inline-block;
+	    /* margin-top: -62px; */
+	    margin-bottom: 6px;
+	}
+
+	.icone-propriedade {
+	    float: none;
+	    /* width: 10%; */
+	    /* height: 145px; */
+	    padding-left: 9px;
+	    display: inline-block;
+	    margin-left: -45px;
+		
+	    position: absolute;
+	}
+
+	.descricao-preco span {
+ 	   	display: block;
+		margin-top: -10px;
+	}
+
+	.descricao-preco {
+    	float: none; 
+	    margin-left: 9px;
+    	margin-top: -10px;
+	    text-align: left;
+	    width: auto;
+	    display: inline-block;
+	}
+
+
+	.descricao-assine {
+		margin-left: -25px;
+	}
+
+	.esq {
+	    padding-top: 10px;
+	    width: auto; 
+	    height: auto; 
+	    display: inline-block;
+	    font-family: 'co-headline';
+	}
+
+	.esq .texto br{
+		display: none;
+	}
+
+	p.texto {
+	    margin-bottom: 5px;
+	}
+
+	.conteudo-vci-sistema {
+	    padding: 0px 15px;
+	    
+	}
+
+	.conteudo-vci-sistema {
+	    /* border: 1px solid #f0f0f0; */
+	    margin: 0px;
+	    margin-bottom: 25px;
+	}
+
+	.central400,.central520 {
+    	height: auto; 
+    }
+
+	.conteudo-vci-print {
+    	width: auto;
+    	margin: 15px auto;
+	}
+
+	.ht-sistema{
+		margin-top:20px;
+		margin-bottom: 40px;
+	}
+
+	.hr-div-sistema{
+		margin-bottom: 50px;
+	}
+
+	.img-contato{
+		margin-top: 20px;
+	}
+
+	.contato-tel {
+	    font-size: 21px;
+	    top: 57%;
+	 
+	}
+
+	form .botao-form-contato {
+    	float: none; 
+    	width: 100%;
+    	
+	}
+
+	.vem-criar-planos {
+ 	   padding: 30px 0;
+	}
+
+	.sem-margem-padrao .texto{
+		margin-bottom: 20px;
+	}
+
+
+}
+
+
+
+
 }

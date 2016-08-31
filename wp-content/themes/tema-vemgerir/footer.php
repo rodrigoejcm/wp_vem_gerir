@@ -21,11 +21,11 @@
 			</a>
 
 			<div class="info-vemrir-footer">
-				<p>Rua Avenida 1234 - Rio de Janeiro</p>
+				<p>Rua 24 de maio, 797 - Rio de Janeiro</p>
 				<p> | </p>
-				<p>vemgerir@vemgerir.com.br</p>
+				<p>contato@vemgerir.com.br</p>
 				<p> | </p>
-				<p> (21) 2345-2334 - (21) 2343-3456</p>
+				<p> (21) 99614-0632</p>
 			</div>
 
 		

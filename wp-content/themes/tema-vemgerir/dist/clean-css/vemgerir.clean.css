@@ -1,0 +1,1675 @@
+/*** uncss> filename: css/vemgerir.css ***/
+/*--------------------------------------------------------------
+CSS template VemGerir.com.br
+
+# Container
+# Menu
+# Headlines
+# Paragrafos
+# Header
+# Header HR
+# Conteudo-pagina-inicial
+# Conteudo-pagina-planos
+# Conteudo-pagina-sistema
+# Footer
+--------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+# Tipografia Typekit
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+
+@media (min-width: 1200px){
+	.container {
+    width: 1000px !important;
+	}	
+}
+/*
+@media (min-width: 992px){
+	.container {
+	    width: 800px !important;
+	}
+}
+@media (min-width: 768px){
+	.container {
+    width: 700px !important;
+	}	
+}*/
+
+
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+ 
+/*# Menu - Ajustes de Floats*/ 
+
+.site-logo{
+	float:left;
+}
+
+.main-navigation, .site-login, .site-fb{
+	float:right;
+}
+
+/*# Menu - Tipografia e efeito hover (border-bottom) Menu WP*/
+
+/*# Menu - Tipografia e efeito hover botôes */
+
+.site-login, .site-fb{
+	font-family: "co-headline";
+	font-size: 14px;
+	border: 2px solid #3BD231;
+	color: #3BD231;
+	word-spacing: -2px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.site-fb a, .site-login a {
+	display: block; /*para o link ocupar toda a div e o hover no link mudar o fundo da div */
+	color: 	#3BD231;
+}	
+
+.site-fb {
+	font-size: 18px;
+
+}
+
+.site-login a:visited,.site-fb a:visited{
+/*	margin: 5px;*/
+	color: #3BD231;
+}
+
+.site-login a:hover, .site-fb a:hover, .site-login a:focus, .site-fb a:focus {
+	text-decoration: none;
+	background-color: #3BD231;
+	color: white; 
+}
+
+/*# Menu - Ajustes de posicionamento entre menu WP e botões */
+
+.main-navigation{
+	padding-top: 2px; /*reajuste de borda para alinhar com os botôes*/
+}
+
+.site-login a {
+	padding: 0px 10px;
+}
+
+.site-fb a {
+	padding: 2px 7px;
+}
+
+.site-login, .site-fb{
+	margin-left:25px;	
+}
+
+/*# Menu - highlight do item corrente */
+
+/*# Menu - Menu dropdown login */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  border-radius: 3px;    
+}
+
+nav li {
+  float: left;          
+}
+
+nav #login-trigger {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 22px;
+  /*line-height: 25px;*/
+  padding: 0 8px;
+  text-decoration: none;
+
+}
+
+/*nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}*/
+
+nav #login-trigger:hover {
+background: #3BD231;
+color: white;
+}
+
+nav #login-content {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: -2px;
+  z-index: 999;    
+  background: #3BD231;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+  right: -2px;
+  width: 200px;  
+}
+
+.input-group{
+	margin: 10px 0px;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+/*# Menu - Menu dropdown login - Botão submit */
+
+form .submit-input {
+	width: 100%;
+	background-color: white;
+	color: #3BD231;
+	font-family: "co-headline";
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+form .submit-input:hover {
+	font-weight: bold;
+}
+
+/*# Menu - Menu responsivo */
+
+/* Menu - Menu responsivo - botão */
+
+#toggle {
+  display: none;
+  width: 28px;
+  height: 30px;
+  float:right;
+  margin-left: 15px;
+  padding-top: 5px;
+}
+
+
+#menu{
+	display: none;
+	float: right;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+  
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #3BD231;
+/*  transition: all 0.3s;
+  backface-visibility: hidden;*/
+  border-radius: 2px;
+}
+
+/* Menu - Menu responsivo - icone menu */
+
+/* Menu - Menu responsivo - itens menu */
+
+#menu {
+  position: absolute;
+  top:90px;
+  color: purple;
+  text-align: center;
+  font-family: "co-headline";
+  font-size: 14px;
+  color: white;
+  word-spacing: -2px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #3BD231;
+  float:right;
+  margin: 0 -15px;
+  /*display: none;*/
+}
+
+/*# Menu - AJustes Midia Query */
+
+#login .area-cliente-icon{
+	display: none;
+}
+
+@media screen and (max-width: 990px) {
+    #login .area-cliente-icon {
+    	display: block;
+    	height: 100%;
+    	width: 100%;
+    	margin-top: 5px;
+    }
+
+    #login .area-cliente-text{
+    	display: none;
+    }
+    nav #login-trigger{
+    	/*height: 0;*/
+    }
+    nav #login-trigger:hover {
+		background: #3BD231;
+		color: white;
+	}
+
+	.site-login, .site-fb {
+    	margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	#toggle {
+		display: block;
+		height: 4px;
+		padding-top: 10px;
+	}
+
+	#menu{
+		display: block;
+	}
+
+	.site-login, .site-fb {
+    	margin-left: 15px;
+	}
+
+	p.texto-index{
+		font-size: 18px !important;
+		padding: 5px 0 !important;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Headlines
+--------------------------------------------------------------*/
+
+h1 {
+	font-family: "co-headline";
+	font-size: 30px;
+	color: #464A4A;
+	font-weight: 300;
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+h2 {
+	font-family: "co-headline";
+	font-size: 30px;
+	color: #464A4A;
+	font-weight: normal;
+}
+
+.cor-abe11e{
+	color: #abe11e !important;
+}
+
+.hmargem {
+	margin-top: 30px !important;
+}
+
+
+/*--------------------------------------------------------------
+# Paragrafos
+--------------------------------------------------------------*/
+
+p.texto {
+
+	font-family: "interface";
+	line-height: 1.4;
+	text-align: left;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+.header-texto{
+	font-family: "interface";
+	line-height: 1.4;
+	width: 100%;
+	/*margin-top: 15px;*/
+	margin-bottom: 15px;	
+	text-align: center;
+
+	
+	
+}
+
+.header-texto p{
+	margin:0 auto;
+	display: inline-block;	
+	background-color: white;
+	text-align: center;
+	font-size: 25px;
+	clear: left;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	height: 90px;
+	border-bottom: 2px solid #f0f0f0;
+
+}
+
+.site-header div.container{
+	padding-top:  30PX;
+	/* position: relative;
+	top: 35%;*/
+	/*transform: translateY(-50%);*/
+
+}
+  
+.logo-header-image {
+	width:150px;
+	
+}
+
+/*--------------------------------------------------------------
+# Header HR
+--------------------------------------------------------------*/
+
+.hr-div hr {
+	height: 2px;
+	background-color: #f0f0f0;
+	margin-top: -30px;
+
+}
+
+.hr-div-esp {
+	height: 3px;
+	background-color: transparent;
+	margin-bottom: 40px;
+}
+
+.hr-table{
+	height: 2px;
+	background-color: white;
+	margin: 10px 35px;	
+}
+
+
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-inicial
+--------------------------------------------------------------*/
+
+
+
+.content-area h1{
+	text-align: center;
+	/*margin:0px;*/
+}
+
+.centralizar{
+	height: 250px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 100px;
+  
+
+}
+
+
+.info-box {
+	height: 380px;
+	
+	padding:28px;
+	margin-bottom: 15px;
+}
+
+.info-vem-criar{
+	background-image: url("../img/VEM CRIAR - home.png");
+	margin-right: 15px;
+	background-repeat: no-repeat;
+}
+
+.info-vem-crescer{
+	background-image: url("../img/VEM CRESCER - home.png");
+	margin-left: 15px; 
+	background-repeat: no-repeat;
+}
+
+.header-box{
+	color: white;
+}
+
+p.header{
+
+	font-family: "co-headline";
+	font-size: 45px;
+	font-weight: lighter;
+	margin-bottom: -25px;
+	text-align: center;
+
+
+}
+
+p.texto-box{
+	margin-top: 40px;
+	height: 100px;
+	font-weight: 500;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	line-height: 1.4;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+
+}
+
+.site-main-sistema{
+	/*alterar pelo placeholder*/
+}
+
+.site-main-sistema-descricao {
+	margin-right: 15px;
+}
+
+.site-main-sistema-descricao p{
+	text-align: center;
+}
+
+.site-main-sistema-imagem {
+	margin-left: 15px;
+}
+
+/*Blockquote teste*/
+
+
+
+.dep:before {
+  content: '\201C';
+  font-family: 'interface';
+  text-align: center;
+  color: #D4FF87;
+  font-size: 140px;
+  font-weight: 700;
+  opacity: .8;
+  text-shadow: none;
+  z-index: -300;
+  display: block;
+  margin-bottom: -100px;
+  margin-top: -55px;
+}
+  
+
+.dep:after {
+  content: '\201D';
+  font-family: 'interface';
+  text-align: center;
+  color: #D4FF87;
+  font-size: 140px;
+  font-weight: 700;
+  opacity: .8;
+  text-shadow: none;
+  z-index: -300;
+  display: block;
+  margin-top: -40px;
+   margin-bottom: -110px;
+
+
+}
+
+.slider p{
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: center;
+	height: 190px;
+	padding: 0 100px;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+}
+
+
+.texto-index{
+	font-family: "co-headline";
+	font-size: 25px !important;
+	font-weight: lighter !important;
+	
+	padding: 15px 100px !important;
+	text-align: center !important;
+}
+
+.texto-index span{
+	color: #3BD231;
+}
+
+
+
+
+.botao-box{
+	width: 80%;
+	font-family: "co-headline";
+	font-size: 16px;
+	background-color: white;
+	display: block;
+	color: white;
+	background-color: transparent;
+    margin-left: 10%;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 10px;
+	position: relative;
+	height: 36px;
+	font-family: "co-headline";
+	font-size: 20px;
+	border: 2px solid white;
+	
+	word-spacing: -2px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+
+
+.botao-box-verde-a:hover{
+	color: white;
+	border: 2px solid #ABE11E;
+	text-decoration: none;
+	background-color: #ABE11E;
+}
+
+.botao-box-verde-b:hover{
+	color: white;
+	border: 2px solid #3BD231;
+	background-color: #3BD231;
+	text-decoration: none;
+}
+
+
+.botao-box:visited {
+	text-decoration: none;
+	color: white !important;	
+}
+
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-planos
+--------------------------------------------------------------*/
+ 
+	
+
+
+.site-main-planos{
+	margin-top: 40px;
+}
+
+.tabela-planos{
+	margin-top: 15px;
+	float:left;
+	width: 100%;
+	margin-bottom: 20px;
+	
+}
+
+
+.tabela-planos tr{
+	height: 50px;
+}
+
+.botao-tabela{
+	width: 50%;
+	font-family: "co-headline";
+	font-size: 16px;
+	background-color: white;
+	display: block;
+	margin-top: -25px;
+    margin-left: 25%;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.botao-tabela:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.botao-tabela:visited {
+	text-decoration: none;	
+}
+
+.nome-plano, .valor-plano, .peridiocidade-plano {
+ 	text-align: center;
+ 	font-family: "co-headline";
+ 	color: white;
+ }
+
+.nome-plano{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.valor-plano{
+	font-size: 28px;
+	font-weight: lighter;
+}
+
+.peridiocidade-plano{
+	font-size: 16px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
+
+.icone-propriedade{
+	float:left;
+	width:10%;
+	height: 3em;
+	padding-left: 9px;
+}
+
+.icone-propriedade i {
+	/*margin-top: 7px;	*/
+}
+
+.descricao-propriedade{
+
+	width:90%;
+	float: right;
+	font-family: 'co-headline';
+	font-size: 20px;
+}
+
+.extra-planos-header{
+	text-align: center;
+	background-color: white;
+	z-index: 2;
+    position: relative;
+    top: -5%;
+    margin: 0 35%;
+}
+
+.extra-planos{
+	border: 2px solid #f0f0f0;
+	height: 350px;
+	margin-top: 40px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.texto-disclaimer p{
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: left;
+	font-size: 14px;
+    line-height: 1.1;
+} 
+
+.banner{
+	height: 300px;
+	background-position: -100px 0; 
+	padding: 40px 20px ;
+	min-width: 300px;
+}
+
+.banner-crescer{
+	background-image: url("../img/VEM CRESCER- banner.png");
+}
+
+.banner-criar{
+	background-image: url("../img/VEM CRIAR - banner.png");
+}
+
+
+.banner-texto{
+	font-family: 'interface';
+	font-size: 20px;
+	width: 260px;
+	color: white;
+	line-height: 1.2;
+}
+
+.banner-texto span{
+	color: #48B60F;
+	display: block;
+	margin-top: 10px;
+
+}
+
+.vem-crescer-planos{
+	border-top: 1px solid #f0f0f0;
+	padding: 15px;
+}
+
+.vem-criar-planos{
+	border-top: 1px solid #f0f0f0;
+	padding: 15px;
+}
+
+.vci-header{
+	font-size: 25px;
+	font-family: 'co-headline';
+	text-align: left !important;
+	margin-bottom: -10px;
+	top:15px;
+	position: relative;
+	z-index: 300;
+}
+
+.vci-header-criar{
+	font-size: 25px;
+	font-family: 'co-headline';
+	text-align: center !important;
+	font-weight: 300;
+}
+
+.vci-header-sistema{
+	font-size: 25px;
+	font-family: 'co-headline';
+	text-align: center !important;
+	font-weight: 300;
+}
+
+
+.vci-header-criar-ch{
+	font-size: 14px;
+	font-family: 'co-headline';
+	text-align: center !important;
+}
+
+.conteudo-vci-desc p{
+	font-size: 15px;
+	font-family: 'interface';
+	text-align: center !important;
+	padding: 0 50px;
+
+}
+
+.conteudo-vci-desc-sistema p{
+	font-size: 15px;
+	font-family: 'interface';
+	text-align: center !important;
+	/*padding: 0 50px;*/
+}
+
+
+.vci-sub-header{
+	font-size: 25px;
+	font-family: 'co-headline';
+	
+	background-color: white;
+	top:15px;
+	position: relative;
+	z-index: 200;
+}
+
+.texto-cor-verce-1D9649{
+	color: #1D9649 !important;
+}
+
+.texto-cor-verce-3BD231{
+	color: #3BD231 !important;
+}
+
+.texto-cor-verce-abe11e{
+	color: #abe11e !important;
+}
+
+
+.descricao-resumo{
+	margin-bottom: 15px;
+	margin-top: 15px;
+;
+}
+
+.descricao-assinatura{
+	margin-top: 15px;
+}
+
+.descricao-assine p{
+	margin-top: 4px;
+}
+
+.descricao-preco{
+		float: left;
+	 	margin-left: 15px;
+	 	text-align: left;
+	 	width: 200px
+}
+
+.descricao-preco span{
+	font-size: 10px;
+}
+
+.descricao-assine{
+	width: 100px;
+
+}
+
+.descricao-propriedade span{
+	font-size: 10px;
+}
+
+
+.botao-3BD231{
+	/*verde limao*/
+	background-color: #3BD231;
+}
+
+.botao-abe11e{
+	/*verde claro*/
+	background-color: #abe11e;
+}
+
+.botao-1D9649{
+	/*verde escuro*/
+	background-color: #1D9649;
+}
+
+1D9649
+
+.botao-abe11e{
+	background-color: #abe11e;
+}
+
+.descricao-assine-botao{
+	
+	font-family: "co-headline";
+ 	font-size: 20px;
+ 	color: white;
+ 	width: 100px;
+ 	height: 40px;
+ 	float: left;
+ 	border-radius: 3px;
+ 	text-align: center;
+}
+
+.descricao-assine-botao:visited{
+	color: white;
+}
+
+.descricao-assine-botao:hover{
+	text-decoration: none;
+	color: white;
+}
+
+/* --Vem Criar*/
+
+.conteudo-vci {
+	/*border: 1px solid #f0f0f0;*/
+	padding: 0 20px;
+	border: 2px solid #f0f0f0;
+	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	height: 420px;
+}
+
+.conteudo-vci-icone{
+	width: 120px;
+	margin:0 auto ;
+	height: 120px;
+	margin-top: -50px;
+	
+}
+
+.conteudo-vci-icone img{
+	background-color: white;
+	
+}
+
+.conteudo-vci-disci{
+	padding: 0 110px;
+	height: 50px;
+	font-weight: lighter;
+}
+
+.conteudo-vci-sistema{
+	padding: 0 30px;
+	font-weight: lighter;
+}
+
+.conteudo-vci-print{
+	width: 400px;
+	margin:0 auto ;
+	height: 300px;
+	
+}
+
+.icone-ger{
+
+}
+
+
+
+
+
+/* --Cores Tabela*/
+
+/* ------verde escuro*/
+
+.verde-a table {
+	border: 1px solid #1D9649;
+}
+
+.verde-a i {
+	color: #1D9649;
+}
+
+.verde-a table thead {
+	background-color: #1D9649; 
+}
+
+.verde-a .botao-tabela{
+	color: #1D9649;	
+	border: 2px solid #1D9649;	
+}
+
+
+
+/* ------verde limao*/
+
+.verde-b table {
+	border: 1px solid #3BD231;
+}
+
+.verde-b i {
+	color: #3BD231;
+}
+.verde-b table thead {
+	background-color: #3BD231; 
+}
+
+.verde-b .botao-tabela{
+	color: #3BD231;	
+	border: 2px solid #3BD231;	
+}
+
+
+/* ------verde claro*/
+
+
+.verde-c table {
+	border: 1px solid #ABE11E;
+}
+
+.verde-c i {
+	color: #ABE11E;
+}
+.verde-c table thead {
+	background-color: #ABE11E; 
+}
+
+.verde-c .botao-tabela{
+	color: #ABE11E;	
+	border: 2px solid #ABE11E;	
+}
+
+/* ------cinza*/
+
+.cinza i {
+	color: #464A4A;
+}
+
+/* Planos - ajustes midia querie*/
+
+@media screen and (max-width: 990px) {
+	
+	.site-main-planos .col-md-4{
+		padding-right: 0px !important;
+    	padding-left: 0px !important;	
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.tabela-planos {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.row {
+    	margin-right: 0;
+    	margin-left: 0;
+	}
+
+	
+    
+}
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-sistema
+--------------------------------------------------------------*/
+
+.sistema{
+	margin-top: 25px;
+	margin-bottom: 50px;
+	clear: both;
+}
+
+.sistema-como-funciona{
+	background-color: #94e673;
+	height: 300px; 
+	margin-top: 40px;
+}
+
+.sistema-como-funciona .como-funciona-gif{
+	position: relative;
+	float:right;
+	top: 30px;
+
+}
+
+.esq{
+	padding: 14px;
+	width:30%;
+	height: 100%;
+	display: inline-block;
+	font-family: 'co-headline';
+
+
+}
+
+.esq .texto{
+	font-size: 25px !important;
+	color: white;
+}
+
+/*--------------------------------------------------------------
+# Conteudo-pagina-contato
+--------------------------------------------------------------*/
+.contato{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.contato .form-control:focus {
+    border-color: #3BD231;
+}
+
+.contato .form-control,.input-group {
+	width: 100% !important;
+}
+
+.contato .form-control{
+	color: #3BD231 !important;
+}
+
+select option{
+	color: #99999F;
+}
+
+select option:active{
+	color: #99999F;
+}
+
+textarea {
+	height: inherit;
+	font-size: 18px !important;
+}
+
+form .botao-form-contato{
+	background-color: #3BD231;
+	font-family: "co-headline";
+ 	font-size: 14px;
+ 	color: white;
+ 	float: right;
+ 	width: 40%;
+ 	height: 40px;
+
+}
+
+.checkbox{
+	font-size: 14px;
+	color: #999;
+}
+
+.img-contato{
+	margin-top: 10px;
+}
+
+.contato-tel{
+	font-size: 35px;
+	font-family: 'co-headline';
+	color:white !important;
+	position: absolute;
+	top:47%;
+	left: 25%;
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+html{
+  position:relative; 
+  min-height: 100%;
+}
+
+#content{
+ 	margin-bottom:90px;
+} 
+
+.site-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:90px;
+	background-color: #3BD231;
+}
+
+.logo-footer-image {
+	margin-top: 20px;	
+	margin-bottom: 10px;	
+	width:120px;
+}
+
+.info-vemrir-footer p{
+	padding-left: 5px;
+	color: white;
+	float: left;
+	font-family: "interface";
+	font-size: 10px;
+
+}
+
+
+
+/*--------------------------------------------------------------
+# Place holder
+--------------------------------------------------------------*/
+
+.placeholder-sistema-imagem{
+	height:300px;
+	background-color: #f5f5f5;
+	border: 1px solid black;
+	margin-top: 24px;
+} 
+/*** uncss> filename: style.css ***/
+/*
+Theme Name: tema-vemgerir
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tema-vemgerir
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+tema-vemgerir is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Header
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+img {
+	border: 0;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+input,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+select {
+	text-transform: none;
+}
+
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2 {
+	clear: both;
+}
+
+
+p {
+	margin-bottom: 1.5em;
+}
+
+i {
+	font-style: italic;
+}
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	/*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);*/
+/*	color: rgba(0, 0, 0, .8);*/
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	/*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+}
+
+input[type="submit"]:hover {
+	/*border-color: #ccc #bbb #aaa;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);*/
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:active {
+	/*border-color: #aaa #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);*/
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	/*clear: both;*/
+	display: block;
+	float: left;
+	/*width: 100%;*/
+}
+
+/* Small menu. */
+
+.comment-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.entry-content:before,
+.entry-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+	table-layout: fixed;
+}
+
+.entry-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+/* Make sure embeds and iframes fit their containers. */
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/

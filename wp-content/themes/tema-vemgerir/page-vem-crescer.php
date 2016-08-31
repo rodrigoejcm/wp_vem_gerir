@@ -17,6 +17,10 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
+		<div 	class="parallax-window superheader-vemcrescer" 
+						data-parallax="scroll" >
+		</div>
+
 		<div class="site-main-planos">
 
 			<div class="row">
@@ -24,10 +28,10 @@ get_header(); ?>
 				<div class="col-md-12">
 					
 					<div class="banner banner-crescer">
-						<div class="banner-texto">
-							Contas a pagar, dinheiro pra receber, funcionários e fornecedores pra controlar, atendimento ao cliente... Difícil gerenciar tudo isso sozinho, não é? Foi pensando em você que criamos nossas soluções para simplificar a sua vida.
-							<br>
-							<span>Vem crescer com a gente!</span>
+						<span class="texto-realce cor-verde">Vem crescer com a gente!</span>
+						<div class="banner-texto banner-texto-vemcrescer">
+							Contas a pagar, dinheiro para receber, funcionários e fornecedores pra controlar, atendimento ao cliente... Difícil gerenciar tudo isso sozinho, não é? Foi pensando em você que criamos nossas soluções para simplificar a sua vida.
+												
 						</div>
 					</div>
 
@@ -42,36 +46,44 @@ get_header(); ?>
 				<div class="col-md-12 ">
 					
 					<div class="vem-crescer-planos row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-12 sem-margem-padrao">
 							<p class="texto">
 								Com um consultor online, você vai ter acesso a conteúdos mais importantes para o seu negócio e, com pequenas mudanças no seu dia a dia, você já vai conseguir ver o seu dinheiro no final do mês. Parece mágica, né? Mas não é. 
 								Vem gerir com a gente. É simples.
 							</p>
 						</div>
 
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-12">
 							<div class="row">
 								<div class="descricao-resumo col-md-12">	
-									<div class="icone-propriedade verde-b">
-										<i class="fa fa-check fa-3x" aria-hidden="true"></i>
+									
+									<div style="display:block;">
+										<div class="icone-propriedade verde-b">
+											<i class="fa fa-check fa-3x" aria-hidden="true"></i>
+										</div>
+										<div class="descricao-propriedade">
+											Sistema Gerencial
+										</div>	
 									</div>
-									<div class="descricao-propriedade">
-										Sistema Gerencial
+									
+									<div  style="display:block;">
+										<div class="icone-propriedade verde-b">
+											<i class="fa fa-check fa-3x" aria-hidden="true"></i>
+										</div>
+										<div class="descricao-propriedade ">
+											Consultor à distância mensal
+										</div>	
+									</div>	
+									
+									<div style="display:block;">
+										<div class="icone-propriedade verde-b">
+											<i class="fa fa-check fa-3x" aria-hidden="true"></i>
+										</div>
+										<div class="descricao-propriedade">
+											Educação Gerencial à distância
+										</div>	
 									</div>
-
-									<div class="icone-propriedade verde-b">
-										<i class="fa fa-check fa-3x" aria-hidden="true"></i>
-									</div>
-									<div class="descricao-propriedade ">
-										Consultor à distância mensao
-									</div>
-
-									<div class="icone-propriedade verde-b">
-										<i class="fa fa-check fa-3x" aria-hidden="true"></i>
-									</div>
-									<div class="descricao-propriedade">
-										Educação Gerencial à distância
-									</div>
+									
 								</div>
 							</div>
 
@@ -84,7 +96,7 @@ get_header(); ?>
 										</a>
 									</div>
 									<div class="descricao-preco valor-plano texto-cor-verce-3BD231 ">
-										R$ 79,90 <span>( por mes )</span>
+										R$ 79,90 <span>( por mês )</span>
 									</div>
 								</div>
 							</div>
@@ -104,9 +116,9 @@ get_header(); ?>
 
 						<div class="row">
 
-							<div class="col-md-6">
+							<div class="col-md-6 sem-margem-padrao">
 								<p class="texto">
-									Você não sabe nem por onde começar a organizar toda a sua vida? Acha que somente o online não vai ser suficiente? Pois bem, nós entendemos e temos a solução perfeita pra você. Que tal um consultor especializado no seu segmento pra te auxiliar a tomar decisões e te guiar para o sucesso? A Vem Gerir tem consultores que vão até você para entender suas principais dificuldades e te ajuda a encontrar os melhores caminhos. Agende uma visita e vem gerir com a gente. É simples.
+									Você não sabe nem por onde começar a organizar toda a sua vida? Acha que somente o online não vai ser suficiente? Pois bem, nós entendemos e temos a solução perfeita pra você. Que tal um consultor especializado no seu segmento pra te auxiliar a tomar decisões e te guiar para o sucesso? A Vem Gerir tem consultores que vão até você para entender suas principais dificuldades e te ajudar a encontrar os melhores caminhos. Agende uma visita e vem gerir com a gente. É simples.
 								</p>
 							</div>
 
@@ -125,7 +137,7 @@ get_header(); ?>
 											</div>
 											
 											<div class="descricao-propriedade ">
-												Consultor presencial mensal <span>(somente grande rio)</span>
+												Consultor presencial mensal <span>(somente Grande Rio)</span>
 											</div>
 										</div>	
 										<div class="icone-propriedade verde-a">
@@ -144,7 +156,7 @@ get_header(); ?>
 											</a>
 										</div>
 										<div class="descricao-preco valor-plano texto-cor-verce-1D9649 ">
-											R$ 79,90 <span>( por mes )</span>
+											R$ 99,90 <span>( por mês )</span>
 										</div>
 									</div>
 								</div>
@@ -156,7 +168,7 @@ get_header(); ?>
 		</div>	
 	</main><!-- #main -->
 </div><!-- #primary -->
-
+<br><br><br><br>
 <?php
 // [RODRIGO] Carrega sidebar
 // posts e comentarios recentes, metas e categorias

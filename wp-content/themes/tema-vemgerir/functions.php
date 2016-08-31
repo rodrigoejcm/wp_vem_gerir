@@ -115,7 +115,7 @@ function tema_vemgerir_scripts() {
 
 	wp_enqueue_script( 'tema-vemgerir-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'tema-vemgerir-js-vemgerir', get_template_directory_uri() . '/js/vemgerir.js', array(), '20151215', true );
+	
 
 	wp_enqueue_script( 'tema-vemgerir-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -134,6 +134,9 @@ function tema_vemgerir_scripts() {
         wp_enqueue_script('tema-vemgerir-jquery-js');
     }
 
+   	wp_enqueue_script( 'tema-vemgerir-parallaxx', get_template_directory_uri() . '/js/parallax.min.js', array(), '20151215', true );
+
+
     if (!is_admin() && $GLOBALS['pagenow'] != 'wp-login.php') {
         wp_deregister_script('tema-vemgerir-bootstrap-js');
         wp_register_script('tema-vemgerir-bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', false, '3.3.7');
@@ -146,6 +149,9 @@ function tema_vemgerir_scripts() {
         wp_enqueue_script('tema-vemgerir-fontawesome-js');
     }
 
+
+    
+
 	/*NAO DEVE SER IMPORTADO EM PRDUCAO*/
     if (!is_admin() && $GLOBALS['pagenow'] != 'wp-login.php') {
         wp_deregister_script('tema-vemgerir-holder-js');
@@ -153,24 +159,38 @@ function tema_vemgerir_scripts() {
         wp_enqueue_script('tema-vemgerir-holder-js');
     }
 
+    
+  	wp_enqueue_script( 'livereload', 'http://' . $_SERVER['SERVER_NAME'] . '/livereload.js', '', null, true );
+
+
 
     wp_enqueue_script( 'tema-vemgerir-slider', get_template_directory_uri() . '/js/slick.min.js', array(), '20151215', false );
 
 
 
 
-	//wp_enqueue_scripts(' tema-vemgerir-jquery-js', 'https://code.jquery.com/jquery-3.1.0.min.js');
-
-	//wp_enqueue_scripts(' tema-vemgerir-bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+
+	// imputa em vemgerir.js a variavel com o path imagem
+
+	$path_vemgerir= array( 'img_path' => get_template_directory_uri().'/img/');
+
+	wp_register_script('tema-vemgerir-js-vemgerir',get_template_directory_uri().'/js/vemgerir.js',true );
+	
+	wp_localize_script( 'tema-vemgerir-js-vemgerir', 'path_vemgerir', $path_vemgerir );
+
+	wp_enqueue_script('tema-vemgerir-js-vemgerir');
+
+
 }
 
 add_action( 'wp_enqueue_scripts', 'tema_vemgerir_scripts' );
 
 /**
+
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
